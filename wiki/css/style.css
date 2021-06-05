@@ -1,0 +1,10 @@
+/* placeholder stylesheet */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+img {
+    border: solid black 5px;
+}
