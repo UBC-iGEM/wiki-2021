@@ -1,9 +1,226 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<!-- https://2021.igem.org/Team:Example/Team -->
 
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>UBC iGEM</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Google Fonts TODO -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+      <!-- TODO -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.css">
+      <script src="../assets/js/bootstrap.js"></script>
+      <link rel="stylesheet" href="../assets/css/style.css">
+
+      <!-- Font Awesome Icons TODO -->
+      <script src="https://kit.fontawesome.com/dee0481b32.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- dropdown, collapsible nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/images/detecTME_logo_light_no_text.svg" style="padding: 0px;  width: 30px; height: 30px;" alt="detecTME logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                <li><a class="dropdown-item" href="../project/poc.html">Design</a></li>
+                <li><a class="dropdown-item" href="../project/engineering.html">Engineering Success</a></li>
+                <li><a class="dropdown-item" href="../project/implementation.html">Implementation</a></li>
+                <li><a class="dropdown-item" href="../project/results.html">Results</a></li>
+                <li><a class="dropdown-item" href="../project/contribution.html">Contributions</a></li>
+                <li><a class="dropdown-item" href="../project/partnership.html">Partnerships</a></li>
+                <li><a class="dropdown-item" href="../project/future.html">Future Directions</a></li>
+                <li><a class="dropdown-item" href="../project/poster.html">Project Poster</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Wet-Lab
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../wet-lab/experiments.html">Experimental Design</a></li>
+                <li><a class="dropdown-item" href="../wet-lab/protocols.html">Protocols</a></li>
+                <li><a class="dropdown-item" href="../wet-lab/notebook.html">Lab Notebook</a></li>
+                <li><a class="dropdown-item" href="../wet-lab/safety.html">Safety</a></li>
+                <li><a class="dropdown-item" href="../wet-lab/parts.html">Parts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dry-Lab
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../dry-lab/model.html">Models</a></li>
+                <li><a class="dropdown-item" href="../dry-lab/software.html">Software</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Human Practices
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../human-practices/integrated_hp.html">Integrated HP</a></li>
+                <li><a class="dropdown-item" href="../human-practices/education.html">Education & Outreach</a></li>
+                <li><a class="dropdown-item" href="../human-practices/communication.html">Communication</a></li>
+                <li><a class="dropdown-item" href="../human-practices/collaborations.html">Collaborations</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 80px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Team
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="team.html">Team Members</a></li>
+                <li><a class="dropdown-item" href="attributions.html">Attributions</a></li>
+                <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- footer -->
+    <footer>
+      <section>
+        <div class="container mt-1">
+          <div class="row mt-3" style="text-align: left;">
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0" style="padding: 0px;">
+              <a href="https://www.ubcigem.com/" target="_blank">
+                <img src="../assets/images/UBC_iGEM_logo.png" style="width: 100%; height: 70%;">
+              </a>
+            </div>
+
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Project
+              </h6>
+              <p>
+                <a href="../project/description.html" class="text-reset">Description</a>
+              </p>
+              <p>
+                <a href="../project/poc.html" class="text-reset">Design</a>
+              </p>
+              <p>
+                <a href="../project/engineering.html" class="text-reset">Engineering</a>
+              </p>
+              <p>
+                <a href="../project/implementation.html" class="text-reset">Implementation</a>
+              </p>
+              <p>
+                <a href="../project/results.html" class="text-reset">Results</a>
+              </p>
+              <p>
+                <a href="../project/contribution.html" class="text-reset">Contributions</a>
+              </p>
+              <p>
+                <a href="../project/partnership.html" class="text-reset">Partnerships</a>
+              </p>
+              <p>
+                <a href="../project/future.html" class="text-reset">Future Directions</a>
+              </p>
+              <p>
+                <a href="../project/poster.html" class="text-reset">Poster</a>
+              </p>
+            </div>
+
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Wet-Lab
+              </h6>
+              <p>
+                <a href="../wet-lab/experiments.html" class="text-reset">Experiments</a>
+              </p>
+              <p>
+                <a href="../wet-lab/protocols.html" class="text-reset">Protocols</a>
+              </p>
+              <p>
+                <a href="../wet-lab/notebook.html" class="text-reset">Notebook</a>
+              </p>
+              <p>
+                <a href="../wet-lab/safety.html" class="text-reset">Safety</a>
+              </p>
+              <p>
+                <a href="../wet-lab/parts.html" class="text-reset">Parts</a>
+              </p>
+            </div>
+
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Dry-Lab
+              </h6>
+              <p>
+                <a href="../dry-lab/model.html" class="text-reset">Models</a>
+              </p>
+              <p>
+                <a href="../dry-lab/software.html" class="text-reset">Software</a>
+              </p>
+            </div>
+
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Human Practices
+              </h6>
+              <p>
+                <a href="../human-practices/integrated_hp.html" class="text-reset">Integrated HP</a>
+              </p>
+              <p>
+                <a href="../human-practices/education.html" class="text-reset">Outreach</a>
+              </p>
+              <p>
+                <a href="../human-practices/communication.html" class="text-reset">Communication</a>
+              </p>
+              <p>
+                <a href="../human-practices/collaborations.html" class="text-reset">Collaborations</a>
+              </p>
+            </div>
+
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Team
+              </h6>
+              <p>
+                <a href="team.html" class="text-reset">Members</a>
+              </p>
+              <p>
+                <a href="attributions.html" class="text-reset">Attributions</a>
+              </p>
+              <p>
+                <a href="sponsors.html" class="text-reset">Sponsors</a>
+              </p>
+            </div>
+
+            <a href="#" style="text-decoration: none;">
+              <i class="fas fa-arrow-circle-up" style="color: #ffffff; font-size: 3rem; display: block; text-align: right;"></i>
+            </a>
+          </div>
+
+          <!-- social media icons -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.ubcigem.com/" role="button" target="_blank"><i class="fas fa-globe"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ubcigem/" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ubcigem?lang=en" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ubcigem" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://ca.linkedin.com/company/ubcigem" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>   
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/UBC-iGEM" role="button" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCOOzFgcv-rrXYFRonGpRhFg" role="button" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:ubcigem@gmail.com" role="button" target="_blank"><i class="far fa-envelope"></i></a>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>

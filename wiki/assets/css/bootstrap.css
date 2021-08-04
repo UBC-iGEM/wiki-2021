@@ -563,7 +563,14 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 45%;
+  width: 25%;
+  display: block;
+  margin-bottom: 80px;
+  margin-right: 150px;
+  padding-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .img-thumbnail {
@@ -597,7 +604,7 @@ progress {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 0.15rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
@@ -3332,7 +3339,6 @@ textarea.form-control-lg {
 
 .btn-outline-light {
   color: #f8f9fa;
-  border-color: #f8f9fa;
 }
 .btn-outline-light:hover {
   color: #000;
@@ -4178,28 +4184,26 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #F3FAFB;
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: #F3FAFB;
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
-}
+
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: #F3FAFB;
 }
+/* TODO */
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -6200,6 +6204,11 @@ textarea.form-control-lg {
   z-index: 1030;
 }
 
+footer p {
+  margin-bottom: 0px;
+  font-size: small;
+}
+
 .sticky-top {
   position: -webkit-sticky;
   position: sticky;
@@ -7388,6 +7397,11 @@ textarea.form-control-lg {
 
 .text-reset {
   color: inherit !important;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
 }
 
 .bg-primary {
@@ -7415,7 +7429,7 @@ textarea.form-control-lg {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: rgba(196, 196, 196, 0.12) !important;
 }
 
 .bg-dark {
@@ -10833,5 +10847,4 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
 /*# sourceMappingURL=bootstrap.css.map */

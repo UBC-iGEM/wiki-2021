@@ -1,224 +1,384 @@
-<!-- placeholder document -->
+<!-- this version of the wiki uses bootstrap -->
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>UBC iGEM</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
+<html lang="en">
+  <head>
+    <title>UBC iGEM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Google Fonts TODO -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Google Fonts TODO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
-        <!-- Font Awesome Icons TODO -->
-        <script src="https://kit.fontawesome.com/dee0481b32.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- dropdown nav bar -->
-        <div class="navbar">
-            <a href="index.html">DetecTME</a>
-            <div class="dropdown">
-                <button class="dropbtn" style="margin-right: 90px;">Team</button>
-                <div class="dropdown-content">
-                    <a href="team/team.html">Team Members</a>
-                    <a href="team/attributions.html">Attributions</a>
-                    <a href="team/sponsors.html">Sponsors</a>
-                </div>
+    <!-- TODO -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/bootstrap.js"></script>
+
+    <!-- Font Awesome Icons TODO -->
+    <script src="https://kit.fontawesome.com/dee0481b32.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- dropdown, collapsible nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/detecTME_logo_light_no_text.svg" style="padding: 0px;  width: 30px; height: 30px;" alt="detecTME logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="project/description.html">Description</a></li>
+                <li><a class="dropdown-item" href="project/poc.html">Design</a></li>
+                <li><a class="dropdown-item" href="project/engineering.html">Engineering Success</a></li>
+                <li><a class="dropdown-item" href="project/implementation.html">Implementation</a></li>
+                <li><a class="dropdown-item" href="project/results.html">Results</a></li>
+                <li><a class="dropdown-item" href="project/contribution.html">Contributions</a></li>
+                <li><a class="dropdown-item" href="project/partnership.html">Partnerships</a></li>
+                <li><a class="dropdown-item" href="project/future.html">Future Directions</a></li>
+                <li><a class="dropdown-item" href="project/poster.html">Project Poster</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Wet-Lab
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="wet-lab/experiments.html">Experimental Design</a></li>
+                <li><a class="dropdown-item" href="wet-lab/protocols.html">Protocols</a></li>
+                <li><a class="dropdown-item" href="wet-lab/notebook.html">Lab Notebook</a></li>
+                <li><a class="dropdown-item" href="wet-lab/safety.html">Safety</a></li>
+                <li><a class="dropdown-item" href="wet-lab/parts.html">Parts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dry-Lab
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="dry-lab/model.html">Models</a></li>
+                <li><a class="dropdown-item" href="dry-lab/software.html">Software</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Human Practices
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="human-practices/integrated_hp.html">Integrated HP</a></li>
+                <li><a class="dropdown-item" href="human-practices/education.html">Education & Outreach</a></li>
+                <li><a class="dropdown-item" href="human-practices/communication.html">Communication</a></li>
+                <li><a class="dropdown-item" href="human-practices/collaborations.html">Collaborations</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 85px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Team
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="team/team.html">Team Members</a></li>
+                <li><a class="dropdown-item" href="team/attributions.html">Attributions</a></li>
+                <li><a class="dropdown-item" href="team/sponsors.html">Sponsors</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- first panel -->
+    <div id="canvas" class="fade-in">
+      <section class="panel-1">
+        <div class="container">
+          <div class="splash-content">
+            <div>
+              <h1><span style="font-size: 95px; text-shadow: 6px 6px #6CA8A3; font-weight: bold;"> DetecTME</span></h1>
+              <p style="font-size: 25px;">Profiling the <b><span style="color: #84CEC3;">T</span></b>umor <b><span style="color: #84CEC3;">M</span></b>icro<b><span style="color: #84CEC3;">E</span></b>nvironment:</p>
+              <p style="font-size: 25px; margin-top: -20px;">A synthetic biology tool to support cancer immunotherapy </p>
+              <a href="project/description.html" class="button" target="_blank"><b>Learn More</b></a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Human Practices</button>
-                <div class="dropdown-content">
-                    <a href="human-practices/integrated_hp.html">Integrated HP</a>
-                    <a href="human-practices/education.html">Education & Outreach</a>
-                    <a href="human-practices/communication.html">Communication</a>
-                    <a href="human-practices/collaborations.html">Collaborations</a>
+            <img class="img-fluid" src="assets/images/logo.png" alt="detecTME logo"/>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- panel for problem statement + statistics -->
+    <section class="panel-2" style="background-image: linear-gradient(#F3FAFB, #BCE4DF); color: black;">
+      <div class="container" style="width: 90%;">
+        <div class="mb-3">
+          <img src="assets/images/cancer_injection.png" style="width: 10%; height: 10%;">
+        </div>
+        <h2><b>the rise of immunotherapy</b></h2><br>
+        <p><b>Immunotherapy</b> is a rising form of cancer treatment that activates the body’s own immune system to target and destroy tumors. 
+          While extremely effective in some patients, <b>only 20-40% of patients respond to immunotherapy</b>.</p>
+      </div>
+      <div class="container" style="width: 85%;">
+        <div class="mb-3">
+          <img src="assets/images/tumor_icon.png" style="width: 10%; height: 10%;">
+        </div>
+        <h2><b>tumor heterogeneity: a major problem within cancer therapy</b></h2><br>
+        <p><b>Tumor heterogeneity</b>一which refers to the diversity of tumor microenvironments一is one of the barriers limiting the efficacy of immunotherapies.</p>
+        <p>The clinical outcome of immunotherapy is highly dependent on the immune activity of the tumor microenvironment, but this factor is highly variable amongst patients.</p> 
+      </div>
+      <div class="container" style="width: 85%; margin-bottom: 0px;">
+        <div class="mb-3">
+          <img src="assets/images/checklist.png" style="width: 10%; height: 10%;">
+        </div>
+        <h2><b>predicting patient response to immunotherapy</b></h2><br>
+        <p>There is an urgent need for a non-invasive way to better understand and characterize the immune activity of the tumor microenvironment, in order to predict patient suitability for immunotherapy.</p>
+        <p>With this information, clinicians would be able to prevent patients from undergoing the unfavorable side effects and financial burden of an immunotherapy treatment that would not benefit their health.</p>
+      </div>
+    </section>
+
+    <!-- panel for solution + project pipeline -->
+    <section class="panel-2" style="background-color: #F3FAFB; color: black;">
+      <div class="container" style="width: 90%; margin-bottom: 0px;">
+        <h2><b>Our Solution</b></h2><br>
+        <p>We want to create a bacterial platform that can report on tumour immune status in-vivo, and generate a reporter that can be easily retrieved in urine or blood.</p>
+        <br>
+        <img src="assets/images/solution_pipeline.PNG" style="border: 8px solid #BCE4DF;">
+      </div>
+    </section>
+
+    <!-- panel for project promotional video -->
+    <section class="panel-2" style="background-color: #84CEC3; color:#FFFFFF">
+      <div class="container" style="margin-bottom: 0px;">
+        <h2><b>Project Promotional Video</b></h2><br>
+        <p>Insert sentence about project promotional video.</p>
+        <video controls poster="" width="600" height="340">
+          <source src="assets/images/promotional_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- panel w/ background image -->
+    <section class="panel-4">
+      <div class="container">
+        <div>
+          <p style="font-size: 40px; color: #F9DB87">Insert a few more sentences about the project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- subteam work preview/summary -->
+    <section id="section_preview">
+      <div class="container">
+        <h1><b>Section Preview</b></h1>
+        <p>Sentence about section preview.</p>
+        <div class="row">
+          <div class="col-md">
+            <div class="section">
+              <a href="" target="_blank">
+                <div class="section-body">
+                  <i class="far fa-lightbulb"></i>
+                  <h3 class="mb-3">Project</h3>
+                  <p>Summary of project components.</p>
                 </div>
+              </a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Dry-Lab</button>
-                <div class="dropdown-content">
-                    <a href="dry-lab/model.html">Models</a>
-                    <a href="dry-lab/software.html">Software</a>
+          </div>
+
+          <div class="col-md">
+            <div class="section">
+              <a href="" target="_blank">
+                <div class="section-body">
+                  <i class="fas fa-flask"></i>
+                  <h3 class="mb-3">Wet-Lab</h3>
+                  <p>Summary of wet-lab components.</p>
                 </div>
+              </a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Wet-Lab</button>
-                <div class="dropdown-content">
-                    <a href="wet-lab/experiments.html">Experimental Design</a>
-                    <a href="wet-lab/protocols.html">Protocols</a>
-                    <a href="wet-lab/notebook.html">Notebook</a>
-                    <a href="wet-lab/safety.html">Safety</a>
-                    <a href="wet-lab/parts.html">Parts</a>
+          </div>
+
+          <div class="col-md">
+            <div class="section">
+              <a href="" target="_blank">
+                <div class="section-body">
+                  <i class="fas fa-superscript"></i>
+                  <h3 class="mb-3">Modelling</h3>
+                  <p>Summary of modelling components.</p>
                 </div>
+              </a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Project</button>
-                <div class="dropdown-content">
-                    <a href="project/description.html">Description</a>
-                    <a href="project/poc.html">Design</a>
-                    <a href="project/engineering.html">Engineering Success</a>
-                    <a href="project/implementation.html">Implementation</a>
-                    <a href="project/results.html">Results</a>
-                    <a href="project/contribution.html">Contributions</a>
-                    <a href="project/partnership.html">Partnerships</a>
-                    <a href="project/future.html">Future Directions</a>
-                    <a href="project/poster.html">Project Poster</a>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <!-- first panel -->
-        <div id="canvas" class="fade-in">
-          <section class="panel-1">
-              <div class="container">
-                  <div class="splash-content">
-                      <div>
-                          <h1><span style="font-size: 95px; text-shadow: 6px 6px #6a79b1;"> DetecTME</span></h1>
-                          <p style="font-size: 25px;">Profiling the <b><span style="color: #a7b3df;">T</span></b>umor <b><span style="color: #a7b3df;">M</span></b>icro<b><span style="color: #a7b3df;">E</span></b>nvironment:</p>
-                          <p style="font-size: 25px; margin-top: -30px;">A synthetic biology tool to support cancer immunotherapy </p>
-                          <a href="project/description.html" class="button" target="_blank"><b>Learn More</b></a>
-                      </div>
-                  <img class="img-fluid" src="assets/images/medical_research.svg" alt=""/>
-                  </div>
-              </div>
-          </section>
+        <div class="row"> 
+          <div class="col-md">
+            <div class="section">
+              <a href="" target="_blank">
+                <div class="section-body">
+                  <i class="fas fa-laptop-code"></i>
+                  <h3 class="mb-3">Software</h3>
+                  <p>Summary of software components.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="section">
+              <a href="" target ="_blank">
+                <div class="section-body">
+                  <i class="far fa-comments"></i>
+                  <h3 class="mb-3">Human Practices</h3>
+                  <p>Summary of integrated HP components.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="section">
+              <a href="" target ="_blank">
+                <div class="section-body">
+                  <i class="fas fa-globe-americas"></i>
+                  <h3 class="mb-3">Public Engagement</h3>
+                  <p>Summary of outreach & collab efforts.</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- panel for problem statement/stats -->
-        <section class="panel-2">
-            <div class="container">
-                <h1>PROBLEM STATEMENT AND STATISTICS</h1>
+    <!-- footer -->
+    <footer>
+      <section>
+        <div class="container mt-1">
+          <div class="row mt-3" style="text-align: left;">
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0" style="padding: 0px;">
+              <a href="https://www.ubcigem.com/" target="_blank">
+                <img src="assets/images/UBC_iGEM_logo.png" style="width: 100%; height: 70%;">
+              </a>
             </div>
-        </section>
 
-        <!-- box(es) -->
-        <section class="panel-3">
-            <div class="container">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <img src="assets/images/tumor_icon.png" style="width: 10%; height: 10%;">
-                        </div>
-                    </div>
-                    <h1>PROBLEM STATEMENT AND STATISTICS</h1>
-                </div>
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Project
+              </h6>
+              <p>
+                <a href="project/description.html" class="text-reset">Description</a>
+              </p>
+              <p>
+                <a href="project/poc.html" class="text-reset">Design</a>
+              </p>
+              <p>
+                <a href="project/engineering.html" class="text-reset">Engineering</a>
+              </p>
+              <p>
+                <a href="project/implementation.html" class="text-reset">Implementation</a>
+              </p>
+              <p>
+                <a href="project/results.html" class="text-reset">Results</a>
+              </p>
+              <p>
+                <a href="project/contribution.html" class="text-reset">Contributions</a>
+              </p>
+              <p>
+                <a href="project/partnership.html" class="text-reset">Partnerships</a>
+              </p>
+              <p>
+                <a href="project/future.html" class="text-reset">Future Directions</a>
+              </p>
+              <p>
+                <a href="project/poster.html" class="text-reset">Poster</a>
+              </p>
             </div>
-        </section>
 
-        <!-- another panel -->
-        <section class="panel-4">
-            <div class="container">
-                <div class="d-sm-flex">
-                    <div>
-                        <p style="font-size: 40px;">Insert a few sentences.</p>
-                    </div>
-                </div>
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Wet-Lab
+              </h6>
+              <p>
+                <a href="wet-lab/experiments.html" class="text-reset">Experiments</a>
+              </p>
+              <p>
+                <a href="wet-lab/protocols.html" class="text-reset">Protocols</a>
+              </p>
+              <p>
+                <a href="wet-lab/notebook.html" class="text-reset">Notebook</a>
+              </p>
+              <p>
+                <a href="wet-lab/safety.html" class="text-reset">Safety</a>
+              </p>
+              <p>
+                <a href="wet-lab/parts.html" class="text-reset">Parts</a>
+              </p>
             </div>
-        </section>
 
-        <!-- subteam work preview/summary -->
-        <section id="section_preview">
-            <div class="container">
-              <h1>Section Preview</h1>
-              <p>Sentence about section preview.</p>
-              <div class="row">
-                <div class="col-md">
-                    <div class="section">
-                        <a href="" target="_blank">
-                            <div class="section-body">
-                                <i class="far fa-lightbulb"></i>
-                                <h3 class="mb-3">Project</h3>
-                                <p>Summary of project components.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md">
-                    <div class="section">
-                        <a href="" target="_blank">
-                            <div class="section-body">
-                                <i class="fas fa-flask"></i>
-                                <h3 class="mb-3">Wet-Lab</h3>
-                                <p>Summary of wet-lab components.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md">
-                    <div class="section">
-                        <a href="" target="_blank">
-                            <div class="section-body">
-                                <i class="fas fa-superscript"></i>
-                                <h3 class="mb-3">Modelling</h3>
-                                <p>Summary of modelling components.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-              </div>
-
-            <div class="row">
-                <div class="col-md">
-                  <div class="section">
-                      <a href="" target="_blank">
-                        <div class="section-body">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3 class="mb-3">Software</h3>
-                            <p>Summary of software components.</p>
-                        </div>
-                      </a>
-                  </div>
-                </div>
-
-                <div class="col-md">
-                    <div class="section">
-                        <a href="" target ="_blank">
-                            <div class="section-body">
-                                <i class="far fa-comments"></i>
-                                <h3 class="mb-3">Human Practices</h3>
-                                <p>Summary of integrated HP components.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md">
-                    <div class="section">
-                        <a href="" target ="_blank">
-                            <div class="section-body">
-                                <i class="fas fa-globe-americas"></i>
-                                <h3 class="mb-3">Public Engagement</h3>
-                                <p>Summary of outreach & collab efforts.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Dry-Lab
+              </h6>
+              <p>
+                <a href="dry-lab/model.html" class="text-reset">Models</a>
+              </p>
+              <p>
+                <a href="dry-lab/software.html" class="text-reset">Software</a>
+              </p>
             </div>
-            </div>
-        </section>
 
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md">
-                        <img class="logo" src="assets/images/UBC_iGEM_logo.png">
-                    </div>
-                    <div class="col-md">
-                        <h1>FOOTER</h1>
-                    </div>
-                    <div class="col-md">
-                        <a href="#" style="text-decoration: none;">
-                            <i class="fas fa-arrow-circle-up" style="color: #ffffff; font-size: 3rem; display: block; text-align: right;"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Human Practices
+              </h6>
+              <p>
+                <a href="human-practices/integrated_hp.html" class="text-reset">Integrated HP</a>
+              </p>
+              <p>
+                <a href="human-practices/education.html" class="text-reset">Outreach</a>
+              </p>
+              <p>
+                <a href="human-practices/communication.html" class="text-reset">Communication</a>
+              </p>
+              <p>
+                <a href="human-practices/collaborations.html" class="text-reset">Collaborations</a>
+              </p>
             </div>
-        </footer>
 
-    </body>
+            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Team
+              </h6>
+              <p>
+                <a href="team/team.html" class="text-reset">Members</a>
+              </p>
+              <p>
+                <a href="team/attributions.html" class="text-reset">Attributions</a>
+              </p>
+              <p>
+                <a href="team/sponsors.html" class="text-reset">Sponsors</a>
+              </p>
+            </div>
+
+            <a href="#" style="text-decoration: none;">
+              <i class="fas fa-arrow-circle-up" style="color: #ffffff; font-size: 3rem; display: block; text-align: right;"></i>
+            </a>
+          </div>
+
+          <!-- social media icons -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.ubcigem.com/" role="button" target="_blank"><i class="fas fa-globe"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ubcigem/" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ubcigem?lang=en" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ubcigem" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://ca.linkedin.com/company/ubcigem" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>   
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/UBC-iGEM" role="button" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCOOzFgcv-rrXYFRonGpRhFg" role="button" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:ubcigem@gmail.com" role="button" target="_blank"><i class="far fa-envelope"></i></a>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
