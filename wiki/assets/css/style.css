@@ -16,6 +16,11 @@ footer {
   background-color: rgba(196, 196, 196, 0.12) !important;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: large;
+}
+
 h6 {
   color: #84CEC3;
   font-size: medium;
@@ -28,39 +33,62 @@ h6 {
 .panel-1 {
   text-align: left;
   height: 100vh;
+  background-image: url("../images/melanoma-flickr.jpg");
+  background-size: 100%;
+  height: 100vh;
+  padding-top: 10%;
 }
 
-.panel-2 {
+.problem-overview {
+  background-image: linear-gradient(#F3FAFB, #BCE4DF);
+  color: black;
+}
+
+.problem-overview img {
+  width: 10%;
+  height: 10%;
+}
+
+.problem-overview p {
+  background-color: #F3FAFB;
+  font-size: 22px;
+}
+
+.problem-overview .container {
+  margin-bottom: 80px;
+  width: 85%; 
+}
+
+.panel-2, .problem-overview {
+  background-color: #F3FAFB;
   padding: 3rem;
   text-align: center;
-  color:var(--primary-bg);
+  color: black;
 }
 
 .panel-2 .container {
-  margin-bottom: 80px; 
+  margin-bottom: 80px;
+  width: 85%; 
 }
 
 .panel-2 p {
   font-size: 22px;
 }
 
-.panel-4 {
-  padding: 3rem;
-  text-align: center;
-  background-image: url("../images/cancer_HeLa_cells_right.PNG");
-  background-size: 100%;
-}
-
-.splash-content{
+.splash-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  background-color: var(--primary-bg); 
+  padding: 20px;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: large;
+.img-fluid {
+  margin-right: 90px;
+  max-width: 100%;
+  height: 45%;
+  width: 25%;
+  display: block;
 }
 
 a.button {
@@ -68,6 +96,7 @@ a.button {
   padding: 0.5em 3em;
   border: 0.16em solid #F9DB87;
   margin: 30px;
+  margin-right: 0px;
   box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
@@ -121,13 +150,9 @@ a.button:hover {
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: #F3FAFB;
-  color: var(--primary-bg);
+  color: black;
   padding-left: 7%;
   padding-right: 7%;
-}
-
-#section_preview h1 {
-  font-size: 30px;
 }
 
 .section {
@@ -160,4 +185,8 @@ a.button:hover {
 .section-body:hover {
   display: block;
   background-color: #6CA8A3;
+}
+
+.visualization {
+  text-align: center;
 }

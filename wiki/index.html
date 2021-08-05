@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/detecTME_logo_light_no_text.svg" style="padding: 0px;  width: 30px; height: 30px;" alt="detecTME logo">
+          <img src="assets/images/detecTME_logo_light_no_text.svg" style="padding: 0px; width: 30px; height: 30px;" alt="detecTME logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
             </li>
             <li class="nav-item dropdown" style="margin-right: 8px;">
               <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Wet-Lab
+                Experiments
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="wet-lab/experiments.html">Experimental Design</a></li>
@@ -62,16 +62,16 @@
             </li>
             <li class="nav-item dropdown" style="margin-right: 8px;">
               <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dry-Lab
+                Models
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="dry-lab/model.html">Models</a></li>
+                <li><a class="dropdown-item" href="dry-lab/model.html">Mathematical Modelling</a></li>
                 <li><a class="dropdown-item" href="dry-lab/software.html">Software</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown" style="margin-right: 8px;">
               <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Human Practices
+                User-Centered Design
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="human-practices/integrated_hp.html">Integrated HP</a></li>
@@ -100,8 +100,8 @@
       <section class="panel-1">
         <div class="container">
           <div class="splash-content">
-            <div>
-              <h1><span style="font-size: 95px; text-shadow: 6px 6px #6CA8A3; font-weight: bold;"> DetecTME</span></h1>
+            <div style="margin-left: 60px;">
+              <h1 style="font-size: 95px; font-weight: bold; text-shadow: 6px 6px #6CA8A3;">DetecTME</h1>
               <p style="font-size: 25px;">Profiling the <b><span style="color: #84CEC3;">T</span></b>umor <b><span style="color: #84CEC3;">M</span></b>icro<b><span style="color: #84CEC3;">E</span></b>nvironment:</p>
               <p style="font-size: 25px; margin-top: -20px;">A synthetic biology tool to support cancer immunotherapy </p>
               <a href="project/description.html" class="button" target="_blank"><b>Learn More</b></a>
@@ -113,26 +113,26 @@
     </div>
 
     <!-- panel for problem statement + statistics -->
-    <section class="panel-2" style="background-image: linear-gradient(#F3FAFB, #BCE4DF); color: black;">
-      <div class="container" style="width: 90%;">
+    <section class="problem-overview">
+      <div class="container">
         <div class="mb-3">
-          <img src="assets/images/cancer_injection.png" style="width: 10%; height: 10%;">
+          <img src="assets/images/cancer_injection.png">
         </div>
         <h2><b>the rise of immunotherapy</b></h2><br>
-        <p><b>Immunotherapy</b> is a rising form of cancer treatment that activates the body’s own immune system to target and destroy tumors. 
-          While extremely effective in some patients, <b>only 20-40% of patients respond to immunotherapy</b>.</p>
+        <p><b>Immunotherapy</b> is a rising form of cancer treatment that activates the body’s own immune system to target and destroy tumors.</p> 
+        <p>While extremely effective in some patients, <b>only 20-40% of patients respond to immunotherapy</b>.</p>
       </div>
-      <div class="container" style="width: 85%;">
+      <div class="container">
         <div class="mb-3">
-          <img src="assets/images/tumor_icon.png" style="width: 10%; height: 10%;">
+          <img src="assets/images/tumor_icon.png">
         </div>
         <h2><b>tumor heterogeneity: a major problem within cancer therapy</b></h2><br>
         <p><b>Tumor heterogeneity</b>一which refers to the diversity of tumor microenvironments一is one of the barriers limiting the efficacy of immunotherapies.</p>
         <p>The clinical outcome of immunotherapy is highly dependent on the immune activity of the tumor microenvironment, but this factor is highly variable amongst patients.</p> 
       </div>
-      <div class="container" style="width: 85%; margin-bottom: 0px;">
+      <div class="container" style="margin-bottom: 0px;">
         <div class="mb-3">
-          <img src="assets/images/checklist.png" style="width: 10%; height: 10%;">
+          <img src="assets/images/checklist.png">
         </div>
         <h2><b>predicting patient response to immunotherapy</b></h2><br>
         <p>There is an urgent need for a non-invasive way to better understand and characterize the immune activity of the tumor microenvironment, in order to predict patient suitability for immunotherapy.</p>
@@ -141,7 +141,7 @@
     </section>
 
     <!-- panel for solution + project pipeline -->
-    <section class="panel-2" style="background-color: #F3FAFB; color: black;">
+    <section class="panel-2">
       <div class="container" style="width: 90%; margin-bottom: 0px;">
         <h2><b>Our Solution</b></h2><br>
         <p>We want to create a bacterial platform that can report on tumour immune status in-vivo, and generate a reporter that can be easily retrieved in urine or blood.</p>
@@ -150,31 +150,11 @@
       </div>
     </section>
 
-    <!-- panel for project promotional video -->
-    <section class="panel-2" style="background-color: #84CEC3; color:#FFFFFF">
-      <div class="container" style="margin-bottom: 0px;">
-        <h2><b>Project Promotional Video</b></h2><br>
-        <p>Insert sentence about project promotional video.</p>
-        <video controls poster="" width="600" height="340">
-          <source src="assets/images/promotional_vid.mp4" type="video/mp4">
-        </video>
-      </div>
-    </section>
-
-    <!-- panel w/ background image -->
-    <section class="panel-4">
-      <div class="container">
-        <div>
-          <p style="font-size: 40px; color: #F9DB87">Insert a few more sentences about the project.</p>
-        </div>
-      </div>
-    </section>
-
     <!-- subteam work preview/summary -->
     <section id="section_preview">
       <div class="container">
-        <h1><b>Section Preview</b></h1>
-        <p>Sentence about section preview.</p>
+        <h2><b>Section Preview</b></h2>
+        <p style="font-size: 22px;">Sentence about section preview.</p>
         <div class="row">
           <div class="col-md">
             <div class="section">
@@ -253,6 +233,17 @@
       </div>
     </section>
 
+    <!-- panel for project promotional video -->
+    <section class="panel-2" style="background-color: #84CEC3; color:#FFFFFF">
+      <div class="container" style="margin-bottom: 0px;">
+        <h2><b><u>Project Promotional Video</u></b></h2><br>
+        <p>Insert sentence about project promotional video.</p>
+        <video controls poster="TODO" width="600" height="340">
+          <source src="assets/images/promotional_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
     <!-- footer -->
     <footer>
       <section>
@@ -299,7 +290,7 @@
 
             <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
               <h6 class="text-uppercase fw-bold mb-3">
-                Wet-Lab
+                Experiments
               </h6>
               <p>
                 <a href="wet-lab/experiments.html" class="text-reset">Experiments</a>
@@ -320,10 +311,10 @@
 
             <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
               <h6 class="text-uppercase fw-bold mb-3">
-                Dry-Lab
+                Models
               </h6>
               <p>
-                <a href="dry-lab/model.html" class="text-reset">Models</a>
+                <a href="dry-lab/model.html" class="text-reset">Mathematical Modelling</a>
               </p>
               <p>
                 <a href="dry-lab/software.html" class="text-reset">Software</a>
@@ -332,7 +323,7 @@
 
             <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-0">
               <h6 class="text-uppercase fw-bold mb-3">
-                Human Practices
+                User-Centered Design
               </h6>
               <p>
                 <a href="human-practices/integrated_hp.html" class="text-reset">Integrated HP</a>
