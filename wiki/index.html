@@ -11,7 +11,7 @@
     <!-- Google Fonts TODO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- TODO -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -76,8 +76,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="human-practices/integrated_hp.html">Human Practices</a></li>
-                <li><a class="dropdown-item" href="human-practices/education.html">Education & Outreach</a></li>
-                <li><a class="dropdown-item" href="human-practices/communication.html">Communication</a></li>
+                <li><a class="dropdown-item" href="human-practices/communication.html">Education & Outreach</a></li>
                 <li><a class="dropdown-item" href="human-practices/collaborations.html">Collaborations</a></li>
               </ul>
             </li>
@@ -96,7 +95,7 @@
       </div>
     </nav>
 
-    <!-- first panel -->
+    <!-- first panel text-shadow: 6px 6px #6CA8A3;" -->
     <!-- TODO: replace w/ animation? -->
     <div id="canvas" class="fade-in">
       <section class="panel-1">
@@ -115,49 +114,25 @@
     </div>
 
     <!-- panel for problem statement + statistics -->
-    <!-- TODO: reformat into stacked blocks? -->
     <section class="problem-overview">
-      <div class="container">
-        <div class="mb-3">
-          <img src="assets/images/cancer_injection.png">
-        </div>
-        <h2><b>the rise of immunotherapy</b></h2><br>
-        <p><b>Immunotherapy</b> is a rising form of cancer treatment that activates the body’s own immune system to target and destroy tumors.</p> 
-        <p>While extremely effective in some patients, <b>only 20-40% of patients respond to immunotherapy</b>.</p>
-      </div>
-      <div class="container">
-        <div class="mb-3">
-          <img src="assets/images/tumor_icon.png">
-        </div>
-        <h2><b>tumor heterogeneity: a major problem within cancer therapy</b></h2><br>
-        <p><b>Tumor heterogeneity</b>一which refers to the diversity of tumor microenvironments一is one of the barriers limiting the efficacy of immunotherapies.</p>
-        <p>The clinical outcome of immunotherapy is highly dependent on the immune activity of the tumor microenvironment, but this factor is highly variable amongst patients.</p> 
-      </div>
-      <div class="container" style="margin-bottom: 0px;">
-        <div class="mb-3">
-          <img src="assets/images/checklist.png">
-        </div>
-        <h2><b>predicting patient response to immunotherapy</b></h2><br>
-        <p>There is an urgent need for a non-invasive way to better understand and characterize the immune activity of the tumor microenvironment, in order to predict patient suitability for immunotherapy.</p>
-        <p>With this information, clinicians would be able to prevent non-responder patients from undergoing the unfavorable side effects and financial burdens of an immunotherapy treatment that would not benefit their health.</p>
-      </div>
+      <img src="assets/images/problem_overview.png" width="70%" height="90%">
     </section>
 
     <!-- panel for solution + project pipeline -->
     <!-- TODO: use new image -->
     <section class="panel-2">
-      <div class="container" style="width: 90%; margin-bottom: 0px;">
-        <h2><b>Our Solution</b></h2><br>
-        <p>We want to create a bacterial platform that can report on tumour immune status in-vivo, and generate a reporter that can be easily retrieved in blood or urine.</p>
-        <br>
-        <img src="assets/images/solution_pipeline.PNG" style="border: 8px solid #BCE4DF;">
+      <div class="container" style="width: 85%;">
+        <h1><b>Our Solution</b></h1><br>
+        <p>We want to create a bacterial platform that can report on tumor immune status in-vivo, and generate a reporter that can be easily retrieved in blood or urine.</p>
+        <br><br>
+        <img src="assets/images/solution_pipeline_new.PNG">
       </div>
     </section>
 
     <!-- project components section -->
     <section id="section_preview">
       <div class="container">
-        <h2><b>Project Components</b></h2>
+        <h1><b>Project Components</b></h1><br>
         <div class="row">
           <div class="col-md">
             <div class="section">
@@ -238,12 +213,23 @@
 
     <!-- panel for project promotional video -->
     <section class="panel-2" style="background-color: #84CEC3; color:#FFFFFF">
-      <div class="container" style="margin-bottom: 0px;">
-        <h2><b><u>Project Promotional Video</u></b></h2><br>
+      <div class="container">
+        <h1><b>Project Promotional Video</b></h1><br>
         <p>Insert sentence about project promotional video.</p>
-        <video controls poster="TODO" width="600" height="340">
+        <video controls poster="TODO" width="700" height="440">
           <source src="assets/images/promotional_vid.mp4" type="video/mp4">
         </video>
+      </div>
+    </section>
+
+    <!-- section for references -->
+    <section class="panel-2" style="background-color: #84CEC3; color:#FFFFFF">
+      <div class="container" style="background-color: #F3FAFB; color: black; text-align: left; padding: 1rem;">
+        <h2><b>References</b></h2><br>
+        <p><b>[1] </b><span id="citation">Sharma, P. et al. (2017). Primary, adaptive, and acquired resistance to cancer immunotherapy. Cell, 168(4), 707–723. https://doi.org/10.1016/j.cell.2017.01.017 </span></p>
+        <p><b>[2] </b><span id="citation">Bonaventura, P. et al. (2019). Cold tumors: A therapeutic challenge for immunotherapy. Frontiers in Immunology, 10. https://doi.org/10.3389/fimmu.2019.00168 </span></p>
+        <p><b>[3] </b><span id="citation">Pilard, C. et al. (2021). Cancer immunotherapy: It’s time to better predict patients’ response. British Journal of Cancer. https://doi.org/10.1038/s41416-021-01413-x </span></p>
+        <p><b>[4] </b><span id="citation">Galli, F. et al. (2020). Relevance of immune cell and tumor microenvironment imaging in the new era of immunotherapy. Journal of Experimental & Clinical Cancer Research, 39(1). https://doi.org/10.1186/s13046-020-01586-y </span></p>
       </div>
     </section>
 
@@ -332,10 +318,10 @@
                 <a href="human-practices/integrated_hp.html" class="text-reset">Human Practices</a>
               </p>
               <p>
-                <a href="human-practices/education.html" class="text-reset">Outreach</a>
+                <a href="human-practices/communication.html" class="text-reset">Education</a>
               </p>
               <p>
-                <a href="human-practices/communication.html" class="text-reset">Communication</a>
+                <a href="human-practices/communication.html" class="text-reset">Outreach</a>
               </p>
               <p>
                 <a href="human-practices/collaborations.html" class="text-reset">Collaborations</a>
@@ -371,6 +357,7 @@
           <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/UBC-iGEM" role="button" target="_blank"><i class="fab fa-github"></i></a>
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCOOzFgcv-rrXYFRonGpRhFg" role="button" target="_blank"><i class="fab fa-youtube"></i></a>
           <a class="btn btn-outline-light btn-floating m-1" href="mailto:ubcigem@gmail.com" role="button" target="_blank"><i class="far fa-envelope"></i></a>
+          <br><br>
         </div>
       </section>
     </footer>
