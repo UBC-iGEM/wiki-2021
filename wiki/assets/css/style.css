@@ -30,6 +30,12 @@ h6 {
   color: #A0D9D1;
 }
 
+.page-title {
+    font-size: calc(20px + 6vw);
+    font-weight: bold;
+    text-align: center;
+}
+
 .panel-1 {
   text-align: left;
   height: 100vh;
@@ -170,6 +176,26 @@ a.button:hover {
 .section-body:hover {
   display: block;
   background-color: #84CEC3;
+}
+
+.sponsor-link img {
+    flex: 0 0 50%;
+    object-fit: contain;
+    max-width: 100%;
+    width: 500px;
+}
+
+.sponsor-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-list {
+    background-color: #84CEC3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .visualization {
