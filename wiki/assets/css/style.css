@@ -1,8 +1,8 @@
 :root {
-  --fadeTime: 4s;
+  --fadeTime: 1s;
   --primary-bg: #233442;
   }
-  
+
 body {
   font-family: 'Open Sans';
   text-align: center;
@@ -53,7 +53,7 @@ h6 {
 }
 
 .panel-2 .container {
-  width: 85%; 
+  width: 85%;
 }
 
 .panel-2 p {
@@ -64,7 +64,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-bg); 
+  background-color: var(--primary-bg);
   padding: 20px;
 }
 
@@ -156,6 +156,7 @@ a.button:hover {
   padding: 1rem 1rem;
   background-color: var(--primary-bg);
   color: #FFFFFF;
+  transition: var(--fadeTime)
 }
 
 .section-body i {
@@ -178,4 +179,52 @@ a.button:hover {
 
 #citation {
   font-size: 18px;
+}
+
+/* Pretend this doesn't exist for a sec :P*
+
+
+.stack {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.layer1 {
+    width: inherit;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.layer2 {
+    width: inherit;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.layer3 {
+    width: inherit;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+} */
+
+
+.jumbotron{
+    background: url("../images/section-banner/integrated-hp.jpg") no-repeat center center !important;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 50vh;
+}
+
+#top{
+  padding-top: 12.5%;
+  text-align: center;
 }
