@@ -15,161 +15,291 @@
 
     <!-- TODO -->
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/int_hp.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/int_hp.js"></script>
 
     <!-- Font Awesome Icons TODO -->
     <script src="https://kit.fontawesome.com/dee0481b32.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- dropdown, collapsible nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../assets/images/detecTME_logo_light_no_text.svg" style="width: 30px; height: 30px;" alt="detecTME logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown" style="margin-right: 8px;">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Project
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
-                <li><a class="dropdown-item" href="../project/poc.html">Design</a></li>
-                <li><a class="dropdown-item" href="../project/engineering.html">Engineering Success</a></li>
-                <li><a class="dropdown-item" href="../project/implementation.html">Implementation</a></li>
-                <li><a class="dropdown-item" href="../project/results.html">Results</a></li>
-                <li><a class="dropdown-item" href="../project/contribution.html">Contributions</a></li>
-                <li><a class="dropdown-item" href="../project/partnership.html">Partnerships</a></li>
-                <li><a class="dropdown-item" href="../project/future.html">Future Directions</a></li>
-                <li><a class="dropdown-item" href="../project/poster.html">Project Poster</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown" style="margin-right: 8px;">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Experiments
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../wet-lab/experiments.html">Experimental Design</a></li>
-                <li><a class="dropdown-item" href="../wet-lab/protocols.html">Protocols</a></li>
-                <li><a class="dropdown-item" href="../wet-lab/notebook.html">Lab Notebook</a></li>
-                <li><a class="dropdown-item" href="../wet-lab/safety.html">Safety</a></li>
-                <li><a class="dropdown-item" href="../wet-lab/parts.html">Parts</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown" style="margin-right: 8px;">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Models
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../dry-lab/model.html">Mathematical Modelling</a></li>
-                <li><a class="dropdown-item" href="../dry-lab/software.html">Software</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown" style="margin-right: 8px;">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                User-Centered Design
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="../human-practices/integrated_hp.html">Human Practices</a></li>
-                <li><a class="dropdown-item" href="../human-practices/communication.html">Education & Outreach</a></li>
-                <li><a class="dropdown-item" href="../human-practices/collaborations.html">Collaborations</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown" style="margin-right: 85px;">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Team
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="team.html">Team Members</a></li>
-                <li><a class="dropdown-item" href="attributions.html">Attributions</a></li>
-                <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+<!--
+    <div class="card">
+      <img class="card-img-top" src="../assets/images/hp/default_card_im.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-primary">Card title</h5>
+        <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
-    </nav>
-    <div class="jumbotron" id="top">
-        <h1>Integrated Human Practices</h1>
-        <p class="py-3">Collaborating with real world experts and profesionals in the medical field to instigate meaningful discussion and integrate valuable feedback</p>
-      </div>
+    </div> -->
 
-      <div class="py-5">
-        <div class="container">
-          <div class="row hidden-md-up">
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="../assets/images/hp/default_card_im.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Card title</h5>
-                  <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="../assets/images/hp/default_card_im.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Card title</h5>
-                  <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="../assets/images/hp/default_card_im.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Card title</h5>
-                  <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div><br>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="../assets/images/hp/default_card_im.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Card title</h5>
-                  <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="../assets/images/hp/default_card_im.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Card title</h5>
-                  <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top" src="../assets/images/hp/default_card_im.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Card title</h5>
-                  <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+    <!-- dropdown, collapsible nav bar -->
+
+    <div class="stem-wrapper">
+    	<div class="stem"></div>
+    	<div class="stem-background"></div>
+    </div>
+
+    <header class="section header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light section">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/images/detecTME_logo_light_no_text.svg" style="width: 30px; height: 30px;" alt="detecTME logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-circle-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown" style="margin-right: 8px;">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Project
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                  <li><a class="dropdown-item" href="../project/poc.html">Design</a></li>
+                  <li><a class="dropdown-item" href="../project/engineering.html">Engineering Success</a></li>
+                  <li><a class="dropdown-item" href="../project/implementation.html">Implementation</a></li>
+                  <li><a class="dropdown-item" href="../project/results.html">Results</a></li>
+                  <li><a class="dropdown-item" href="../project/contribution.html">Contributions</a></li>
+                  <li><a class="dropdown-item" href="../project/partnership.html">Partnerships</a></li>
+                  <li><a class="dropdown-item" href="../project/future.html">Future Directions</a></li>
+                  <li><a class="dropdown-item" href="../project/poster.html">Project Poster</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="margin-right: 8px;">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Experiments
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../wet-lab/experiments.html">Experimental Design</a></li>
+                  <li><a class="dropdown-item" href="../wet-lab/protocols.html">Protocols</a></li>
+                  <li><a class="dropdown-item" href="../wet-lab/notebook.html">Lab Notebook</a></li>
+                  <li><a class="dropdown-item" href="../wet-lab/safety.html">Safety</a></li>
+                  <li><a class="dropdown-item" href="../wet-lab/parts.html">Parts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="margin-right: 8px;">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Models
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../dry-lab/model.html">Mathematical Modelling</a></li>
+                  <li><a class="dropdown-item" href="../dry-lab/software.html">Software</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="margin-right: 8px;">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  User-Centered Design
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../human-practices/integrated_hp.html">Human Practices</a></li>
+                  <li><a class="dropdown-item" href="../human-practices/communication.html">Education & Outreach</a></li>
+                  <li><a class="dropdown-item" href="../human-practices/collaborations.html">Collaborations</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="margin-right: 85px;">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Team
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="team.html">Team Members</a></li>
+                  <li><a class="dropdown-item" href="attributions.html">Attributions</a></li>
+                  <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
+
+    	<div class="section-inner">
+
+    		<div class="master-head">
+    			<h1 class="page-title">Integrated Human Practices</h1>
+    			<p class="page-description">Collaborating with real world experts and profesionals in the medical field to instigate meaningful discussion and integrate valuable feedback.</p>
+    		</div>
+
+    	</div> <!-- section-inner -->
+    </header> <!-- header -->
+
+    <div class="section main-content">
+    	<div class="section-inner">
+
+    		<div class="stem-padding"></div>
+
+    		<div class="post-wrapper">
+
+          <article class="post circle-icon">
+            <div class="stem-overlay">
+              <div class="icon"></div>
+              <div class="stem-mask"></div>
+            </div>
+
+            <div class="post-content">
+              <p class="meta">March 31st, 2021</p>
+              <h2 class="post-title">Dr. James Lim</h2>
+              <div class="entry-content">
+                <p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+              </div>
+            </div>
+          </article>
+
+    			<article class="post circle-icon">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">April 1st, 2021</p>
+    					<h2 class="post-title">Dr. Morgan Roberts</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    			<article class="post circle-icon">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">April 7th, 2021</p>
+    					<h2 class="post-title">Dr. Tracy Kion</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    			<article class="post circle-icon" data-stem-color="yellow">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">April 8th, 2021</p>
+    					<h2 class="post-title">Katelyn Janzen (Finlay Lab)</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    			<article class="post circle-icon" data-stem-color="white">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">April 12th, 2021</p>
+    					<h2 class="post-title">Dr. Stephen Robbins</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    			<article class="post circle-icon">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">April 15th, 2021</p>
+    					<h2 class="post-title">Dr. Saltzman (Salspera)</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    			<article class="post circle-icon" data-stem-color="yellow">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">May 13th, 2021</p>
+    					<h2 class="post-title">Dr. Kevin Bennewith</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+
+    			<article class="post circle-icon" data-stem-color="green">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">June 16th, 2021</p>
+    					<h2 class="post-title">Dr. Brad Nelson</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    			<article class="post circle-icon" data-stem-color="yellow">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">July 16th, 2021</p>
+    					<h2 class="post-title">Dr. Anne-Marie Fortier (Park Lab)</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    			<article class="post circle-icon" data-stem-color="white">
+    				<div class="stem-overlay">
+    					<div class="icon"></div>
+    					<div class="stem-mask"></div>
+    				</div>
+
+    				<div class="post-content">
+    					<p class="meta">July 30th, 2021</p>
+    					<h2 class="post-title">Dr. Mathieu Roumiguie</h2>
+    					<div class="entry-content">
+    						<p>The International Genetically Engineered Machine competition is a worldwide synthetic biology competition that was initially aimed at undergraduate university students, but has since expanded to include divisions for high school students, entrepreneurs, and community laboratories, as well as 'overgraduates'.</p>
+    					</div>
+    				</div>
+    			</article>
+
+    		</div> <!-- post-wrapper -->
+
+    		<div class="single-stem-icon scroll-to-top trigger-scroll-to-top"></div>
+
+    	</div> <!-- section-inner -->
+    </div> <!-- main-content -->
+
+    <footer class="footer section">
+    	<div class="section-inner">
+
+    		<div class="good-bye">
+    			<p>All of our interviews were important contributers to our final product!</p>
+
+    	</div> <!-- section-inner -->
+    </footer> <!-- footer -->
     <!-- footer -->
-    <footer>
+    <footer class="footer pb-0"> <!-- TODO: Fix footer prob -->
       <section>
         <div class="container mt-1">
           <div class="row mt-3" style="text-align: left;">
