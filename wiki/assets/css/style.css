@@ -156,7 +156,7 @@ a.button:hover {
   padding: 1rem 1rem;
   background-color: var(--primary-bg);
   color: #FFFFFF;
-  transition: var(--fadeTime)
+  transition: var(--fadeTime);
 }
 
 .section-body i {
