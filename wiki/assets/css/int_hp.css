@@ -41,13 +41,28 @@
 	 text-align: center;
 	 position: relative;
 	 z-index: 1;
-	 background-image: url('../images/section-banner/integrated-hp.jpg');
+	 background-color: #5b6c7a;/* url('../images/section-banner/integrated-hp.jpg'); */
    background-position: center;
    height: 50vh;
 }
  .header .master-head {
 	 padding: 7% 30px;
+   position: relative;
+   top: 50%;
+   transform: translateY(50%);
+   -webkit-transform: translateY(50%);
 }
+
+@media only screen and (max-width: 600px) {
+  .header .master-head {
+   	 padding: 7% 30px;
+     position: relative;
+     top: 0%;
+     transform: translateY(0%);
+     -webkit-transform: translateY(0%);
+   }
+}
+
  .header .page-title {
 	 padding: 0 30px 0 30px;
 	 font-size: 60px;
@@ -103,7 +118,6 @@
  .footer .good-bye p {
 	 display: block;
 	 margin: 0px auto 30px auto;
-	 max-width: 300px;
 	 clear: both;
 }
  .section .section-inner {
