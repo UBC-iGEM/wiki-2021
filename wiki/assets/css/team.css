@@ -59,171 +59,89 @@
 }
 
 #highlight {
-    background-color: #FFFFFF;
+    background-color: #233442bd;
 }
 
 #team_category {
     font-size: 35px;
     color: #84CEC3;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 hr.solid {
-    border-top: 10px solid rgb(249, 156, 28);
-    width: 90%;
+    border-top: 5px solid rgb(249, 156, 28);
+    width: 40%;
     margin: auto;
-    background-image: linear-gradient(#233442, #84CEC3, #F9DB87, #F99C1C);   /* doesn't work */
-    margin-bottom: -20px;
+    margin-bottom: 20px;
 }
 
-/* hexagon profiles */
-
-#hexGrid {
-    overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0.866% 0;
-    font-size: 15px;
-}
-  
-#hexGrid:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.hex {
-    position: relative;
-    list-style-type: none;
+/* 4 columns side by side */
+.column {
     float: left;
-    overflow: hidden;
-    visibility: hidden;
-    outline: 1px solid transparent;
-    transform: rotate(-60deg) skewY(30deg) translatez(-1px);
-}
-
-.hex * {
-    position: absolute;
-    visibility: visible;
-    outline: 1px solid transparent;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
   
-.hexIn {
-    display: block;
+/* display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 840px) {
+.column {
     width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #FFFFFF;
-    overflow: hidden;
-    transform: skewY(-30deg) rotate(60deg);
+    display: block;
+    }
 }
-  
-.hex img {
-    left: -100%;
-    right: -100%;
-    width: auto;
-    height: 100%;
-    margin: 0 auto;
+
+/* add some shadows to create a card effect */
+.card {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    color: black;
 }
-  
-.hex h1,
-.hex p,
-.hex li {
-    margin: 0;
-    width: 102%;
-    left: -1%;
-    padding: 5%;
-    box-sizing: border-box;
-    background-color: rgba(249, 188, 82, 0.6);
+
+.card h3 {
+    margin-top: 10px;
     font-weight: bold;
-    transition: transform .2s ease-out, opacity .3s ease-out;
-    color: #FFFFFF;
+    font-size: 24px;
 }
 
-.hex h1 {
-    bottom: 50%;
-    padding-top: 50%;
-    font-size: 1.5em;
-    z-index: 1;
-    transform: translateY(-100%) translatez(-1px);
-}
-
-.hex h1:after {
-    content: '';
+.overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
-    left: 45%;
-    width: 10%;
-    text-align: center;
-    border-bottom: 1px solid #FFFFFF;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.5s ease;
+    background-color: rgba(249, 188, 82, 0.8);
 }
 
-.hex p {
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
     top: 50%;
-    padding-bottom: 50%;
-    transform: translateY(100%) translatez(-1px);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.hexIn:hover h1, .hexIn:focus h1, .hexIn:hover p, .hexIn:focus p {
-    transform: translateY(0%) translatez(-1px);
+/* clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-@media (min-width:1201px) {
-.hex {
-    width: 32.666%;
-    padding-bottom: 37.720%;
-}
-.hex:nth-child(5n+1),
-.hex:nth-child(5n+2) {
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
-}
-.hex:nth-child(5n+3),
-.hex:nth-child(5n+4),
-.hex:nth-child(5n+5) {
-    margin-top: -8.564%;
-    margin-bottom: -8.564%;
-}
-.hex:nth-child(5n+2),
-.hex:nth-child(5n+4) {
-    margin-right: 1%;
-    margin-left: 1%;
-}
-.hex:nth-child(5n+1) {
-    margin-left: 0.5%;
-}
-.hex:nth-child(5n+3),
-.hex:nth-child(5n+6) {
-    clear: left;
-}
-}
-
-@media (max-width: 1200px) {  /* <- 1-2  hexagons per row */
-.hex {
-    width: 49.5%;
-    padding-bottom: 57.158%;
-}
-.hex:nth-child(3n+1) {
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
-}
-.hex:nth-child(3n+2),
-.hex:nth-child(3n+3) {
-    margin-top: -13.423%;
-    margin-bottom: -13.423%;
-}
-.hex:nth-child(3n+1) {
-    margin-left: 0.5%
-}
-.hex:nth-child(3n+3) {
-    margin-left: 1%;
-}
-.hex:nth-child(3n+2),
-.hex:nth-child(3n+4) {
-    clear: left;
-}
-}
-
-@media (max-width: 400px) {
-#hexGrid {
-    font-size: 13px;
-}
+.title {
+    font-size: 18px !important;
+    color: grey;
 }
