@@ -1,0 +1,130 @@
+.page-title {
+    font-size: calc(20px + 3.5vw);
+    font-weight: bold;
+    text-align: center;
+    margin-top: -22px;
+}
+
+.fade-in {
+    animation: fadeIn var(--fadeTime);
+    -webkit-animation: fadeIn var(--fadeTime);
+    -moz-animation: fadeIn var(--fadeTime);
+    -o-animation: fadeIn var(--fadeTime);
+    -ms-animation: fadeIn var(--fadeTime);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.panel-2 {
+    background-color: #233442;
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.panel-2 .container {
+    width: 100%;
+}
+
+.panel-2 p {
+    font-size: 22px;
+}
+
+#subtitle {
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+/* 1. Enable smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+main > nav {
+	position: sticky;
+	top: 2rem;
+	align-self: start;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+	color: #333;
+	font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+	padding-left: 0;
+	border-left: 1px solid #efefef;
+}
+
+.section-nav a {
+	text-decoration: none;
+	display: block;
+	padding: .125rem 0;
+	color: #ccc;
+	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+	color: #666;
+}
+
+/** Poor man's reset **/
+* {
+	box-sizing: border-box;
+}
+
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  text-align: left;
+}
+li {
+	margin-left: 1rem;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+/** page layout **/
+main {
+	display: grid;
+	grid-template-columns: 15em 1fr;
+	max-width: 100em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/** enlarge the sections for this demo, so that we have a long scrollable page **/
+section {
+	padding-bottom: 20rem;
+}
