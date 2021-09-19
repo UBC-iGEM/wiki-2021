@@ -1,0 +1,88 @@
+.page-title {
+    font-size: calc(20px + 3.5vw);
+    font-weight: bold;
+    text-align: center;
+    margin-top: -22px;
+}
+
+.sponsor-link img {
+    flex: 0 0 50%;
+    object-fit: contain;
+    height: 500px;
+    width: 500px;
+}
+
+.sponsor-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.sponsor-list {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsor-list img {
+    padding: 3rem;
+}
+
+img:hover {
+    opacity: 0.6;
+}
+
+.fade-in {
+    animation: fadeIn var(--fadeTime);
+    -webkit-animation: fadeIn var(--fadeTime);
+    -moz-animation: fadeIn var(--fadeTime);
+    -o-animation: fadeIn var(--fadeTime);
+    -ms-animation: fadeIn var(--fadeTime);
+}
+  
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.panel-2 {
+    background-color: #233442;
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+.panel-2 .container {
+    width: 85%; 
+}
+  
+.panel-2 p {
+    font-size: 22px;
+}
+
+#subtitle {
+    opacity: 0.5;
+    font-weight: bold;
+}

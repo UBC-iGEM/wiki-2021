@@ -18,12 +18,12 @@
 
 
  body {
-	 background: #233442;
+	 background: white;
 	 margin: 0px;
 	 padding: 0px;
 	 font-size: 15px;
 	 line-height: 26px;
-	 color: #B9CFD0;
+	 color: black;
    font-family: 'Open Sans';
 	 overflow-x: hidden;
 	 overflow-y: scroll;
@@ -41,32 +41,18 @@
 	 text-align: center;
 	 position: relative;
 	 z-index: 1;
-	 background-color: #5b6c7a;/* url('../images/section-banner/integrated-hp.jpg'); */
+	 background-color: #233442;/* url('../images/section-banner/integrated-hp.jpg'); */
    background-position: center;
-   height: 50vh;
 }
  .header .master-head {
-	 padding: 7% 30px;
    position: relative;
-   top: 50%;
-   transform: translateY(50%);
-   -webkit-transform: translateY(50%);
+
 }
 
-@media only screen and (max-width: 600px) {
-  .header .master-head {
-   	 padding: 7% 30px;
-     position: relative;
-     top: 0%;
-     transform: translateY(0%);
-     -webkit-transform: translateY(0%);
-   }
-}
 
  .header .page-title {
 	 padding: 0 30px 0 30px;
 	 font-size: 60px;
-	 line-height: 1em;
 	 color: #FFF;
 }
  .header .page-description {
@@ -104,8 +90,13 @@
  .main-content .section-inner:after, .main-content .post-wrapper:after {
 	 clear: both;
 }
+
+.foot{
+  background-color: #233442 !important;
+  color: white;
+}
  .footer {
-	 background: #233442;
+	 background: white;
 	 padding: 150px 0px 300px 0px;
 	 position: relative;
 	 z-index: 1;
@@ -156,7 +147,7 @@
 	 height: 100%;
 }
  .stem-wrapper .stem-background {
-	 background: #39ACBD;
+	 background: #84CEC3;
 	 height: 50%;
 }
  .stem-padding, .single-stem-icon {
@@ -298,4 +289,39 @@
 }
  .clearfix:after {
 	 clear: both;
+}
+
+.panel-2 {
+    background-color: #233442;
+    padding: 4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.panel-2 .container {
+    width: 100%;
+}
+
+.panel-2 p {
+    font-size: 22px !important;
+}
+
+#subtitle {
+    opacity: 0.5 !important;
+    font-weight: bold !important;
+}
+.page-title {
+    font-size: calc(20px + 3.5vw) !important;
+    font-weight: bold !important;
+    text-align: center;
+    margin-top: -22px;
+}
+
+.center {
+position: relative;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+padding: 10px;
+text-align: center;
 }
