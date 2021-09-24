@@ -1,0 +1,120 @@
+.page-title {
+    font-size: calc(20px + 3.5vw);
+    font-weight: bold;
+    text-align: center;
+    margin-top: -22px;
+}
+
+.fade-in {
+    animation: fadeIn var(--fadeTime);
+    -webkit-animation: fadeIn var(--fadeTime);
+    -moz-animation: fadeIn var(--fadeTime);
+    -o-animation: fadeIn var(--fadeTime);
+    -ms-animation: fadeIn var(--fadeTime);
+}
+  
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.panel-2 {
+    background-color: #233442;
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.panel-3 {
+    background-color: #233442;
+    padding: 3rem;
+    text-align: justify;
+    color: #FFFFFF;
+}
+  
+.panel-3 .container {
+    width: 85%; 
+}
+  
+.panel-3 p {
+    font-size: 22px;
+    color: black;
+}
+
+#subtitle {
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+#highlight {
+    background-color: #233442bd;
+}
+
+#model_category {
+    font-size: 35px;
+    color: #84CEC3;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+hr.solid {
+    border-top: 5px solid rgb(249, 156, 28);
+    width: 40%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.5s ease;
+    background-color: rgba(249, 188, 82, 0.8);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 18px !important;
+    color: grey;
+}

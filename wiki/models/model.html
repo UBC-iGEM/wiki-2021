@@ -3,9 +3,129 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <title>UBC iGEM 2021</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Fonts TODO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- TODO -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/header_footer.css">
+    <link rel="stylesheet" href="../assets/css/model.css">
+    <script src="../assets/js/bootstrap.js"></script>
+
+    <!-- Font Awesome Icons TODO -->
+    <script src="https://kit.fontawesome.com/dee0481b32.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        
+        <!-- dropdown, collapsible nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/detecTME_logo_light_no_text.svg" style="width: 30px; height: 30px;" alt="detecTME logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown" style="margin-right: 8px;">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Project
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                                <li><a class="dropdown-item" href="../project/poc.html">Design</a></li>
+                                <li><a class="dropdown-item" href="../project/engineering.html">Engineering Success</a></li>
+                                <li><a class="dropdown-item" href="../project/implementation.html">Implementation</a></li>
+                                <li><a class="dropdown-item" href="../project/results.html">Results</a></li>
+                                <li><a class="dropdown-item" href="../project/contribution.html">Contributions</a></li>
+                                <li><a class="dropdown-item" href="../project/partnership.html">Partnerships</a></li>
+                                <li><a class="dropdown-item" href="../project/future.html">Future Directions</a></li>
+                                <li><a class="dropdown-item" href="../project/poster.html">Project Poster</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-right: 8px;">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Experiments
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../experiments/experiments.html">Experimental Design</a></li>
+                                <li><a class="dropdown-item" href="../experiments/protocols.html">Protocols</a></li>
+                                <li><a class="dropdown-item" href="../experiments/notebook.html">Lab Notebook</a></li>
+                                <li><a class="dropdown-item" href="../experiments/safety.html">Safety</a></li>
+                                <li><a class="dropdown-item" href="../experiments/parts.html">Parts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-right: 8px;">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Models
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../models/model.html">Mathematical Modelling</a></li>
+                                <li><a class="dropdown-item" href="../models/software.html">Software</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-right: 8px;">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                User-Centered Design
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../user-centered design/integrated_hp.html">Human Practices</a></li>
+                                <li><a class="dropdown-item" href="../user-centered design/communication.html">Education & Outreach</a></li>
+                                <li><a class="dropdown-item" href="../user-centered design/collaborations.html">Collaborations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-right: 85px;">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Team
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../team/team.html">Team Members</a></li>
+                                <li><a class="dropdown-item" href="../team/attributions.html">Attributions</a></li>
+                                <li><a class="dropdown-item" href="../team/sponsors.html">Sponsors</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ideally change to a better panel design-->
+        <div id="modeling-page" class="fade-in">
+            <section class="panel-2">
+                <div class="container">
+                    <div>
+                        <p id="subtitle">Models</p>
+                        <h1 class="page-title">Mathematical Modeling</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="panel-3" style="background-color: #FFFFFF; ">
+            <div class="container" style="padding: 1rem;">
+                <h2 id="model_category" style="margin-top: -30px;">Objectives</h2><hr class="solid">
+            </div>
+            <div class="container" style="width: 85%;">
+                <p>describe our stuff</p>
+            </div>
+            <div class="container" style="padding: 1rem;">
+                <h2 id="model_category" style="margin-top: -30px;">TME Model</h2><hr class="solid">
+            </div>
+            <div class="container" style="width: 85%;">
+                <p>describe our stuff</p>
+            </div>
+            <div class="container" style="padding: 1rem;">
+                <h2 id="model_category" style="margin-top: -30px;">Salmonella Promoter Model</h2><hr class="solid">
+            </div>
+            <div class="container" style="width: 85%;">
+                <p>describe our stuff</p>
+            </div>
+        </section>
     </body>
 </html>
