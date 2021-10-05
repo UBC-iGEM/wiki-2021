@@ -44,13 +44,21 @@
     text-align: center;
     color: #FFFFFF;
 }
+
+.panel-3 {
+    background-color: #233442;
+    padding: 3rem;
+    text-align: justify;
+    color: #FFFFFF;
+}
   
-.panel-2 .container {
+.panel-3 .container {
     width: 85%; 
 }
   
-.panel-2 p {
+.panel-3 p {
     font-size: 22px;
+    color: black;
 }
 
 #subtitle {
@@ -62,7 +70,7 @@
     background-color: #233442bd;
 }
 
-#team_category {
+#model_category {
     font-size: 35px;
     color: #84CEC3;
     font-weight: bold;
@@ -72,36 +80,8 @@
 hr.solid {
     border-top: 5px solid rgb(249, 156, 28);
     width: 40%;
-    margin: auto;
+    margin-left: 0px;
     margin-bottom: 20px;
-}
-
-/* 4 columns side by side */
-.column {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-  
-/* display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 840px) {
-.column {
-    width: 100%;
-    display: block;
-    }
-}
-
-/* add some shadows to create a card effect */
-.card {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    color: black;
-}
-
-.card h3 {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 24px;
 }
 
 .overlay {
@@ -132,13 +112,6 @@ hr.solid {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-/* clear floats */
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .title {

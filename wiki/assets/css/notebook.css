@@ -5,35 +5,6 @@
     margin-top: -22px;
 }
 
-.sponsor-link img {
-    flex: 0 0 50%;
-    object-fit: contain;
-    height: 500px;
-    width: 500px;
-}
-
-.sponsor-link a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-}
-
-.sponsor-list {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sponsor-list img {
-    padding: 3rem;
-}
-
-img:hover {
-    opacity: 0.6;
-}
-
 .fade-in {
     animation: fadeIn var(--fadeTime);
     -webkit-animation: fadeIn var(--fadeTime);
