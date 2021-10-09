@@ -11,33 +11,52 @@ h3 {
 }
 
 .problem-overview {
-  background-image: linear-gradient(#FFFFFF, #84CEC3);
+  /* background-image: linear-gradient(#FFFFFF, #84CEC3); */
+  background-color: #f3fafb;
 }
 
-.problem-overview img {
+/* .problem-overview img {
   border-bottom: #84CEC3 solid 10px;
-}
+} */
 
 .panel-2 {
-  background-color: #FFFFFF;
+  background-color: #f3fafb;
   padding: 3rem;
   text-align: center;
   color: black;
 }
 
 .panel-2 .container {
-  width: 85%; 
+  width: 85%;
 }
 
 .panel-2 p {
   font-size: 22px;
 }
 
+.panel-3 {
+  background-color: #233442;
+  padding: 3rem;
+  text-align: center;
+  color: black;
+}
+
+.panel-3 .container {
+  width: 100%;
+}
+
+.panel-3 p {
+  font-size: 22px;
+  color: #ffffff
+}
+
+
+
 .splash-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-bg); 
+  background-color: var(--primary-bg);
   padding: 20px;
 }
 
@@ -116,8 +135,8 @@ a.button:hover {
 #section_preview {
   padding-top: 20px;
   padding-bottom: 40px;
-  background-color: #FFFFFF;
-  color: black;
+  background-color: #f3fafb;
+  color: #233442;
   padding-left: 7%;
   padding-right: 7%;
 }
@@ -137,7 +156,7 @@ a.button:hover {
   flex: 1 1 auto;
   padding: 1rem 1rem;
   background-color: var(--primary-bg);
-  color: #FFFFFF;
+  color: #f3fafb;
 }
 
 .section-body i {
@@ -169,7 +188,7 @@ a.button:hover {
 
 .accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
   background-color: #F3FAFB !important;
-  color: #233442 !important;   
+  color: #233442 !important;
 }
 
 .accordion-button:not(.collapsed) {
