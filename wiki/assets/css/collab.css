@@ -118,7 +118,7 @@ h1 {
 /** page layout **/
 main {
 	display: grid;
-	grid-template-columns: 15em 1fr;
+	grid-template-columns: 100%;
 	max-width: 100em;
 	width: 90%;
 	margin: 0 auto;
