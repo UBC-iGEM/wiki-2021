@@ -5,12 +5,111 @@
     margin-top: -22px;
 }
 
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: bold;
+}
+
 .fade-in {
     animation: fadeIn var(--fadeTime);
     -webkit-animation: fadeIn var(--fadeTime);
     -moz-animation: fadeIn var(--fadeTime);
     -o-animation: fadeIn var(--fadeTime);
     -ms-animation: fadeIn var(--fadeTime);
+}
+
+
+.fixed-sidebar {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    height: 100px;
+    top: 30px;
+    bottom: auto;
+    min-width: 150px;
+    max-width: 280px;
+    margin-right: 20px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+
+}
+
+.fixed-sidebar .sections {
+    display: flex;
+    flex-direction: column;
+    background-color: #233442;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: white;
+    /* line-height: 0.5; */
+}
+
+.fixed-sidebar .sections :hover {
+  /* text-decoration: underline; */
+  font-weight:bold;
+  /* background-color: #f5ffff; /* Add background on hover */ */
+}
+
+.panel-2 {
+    background-color: #233442;
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.panel-2 .container {
+    width: 85%;
+}
+
+.panel-2 p {
+    font-size: 22px;
+}
+
+.content-area {
+    padding: 15px;
+    background: #FFFFFF;
+    width:100%;
+    padding:7%;
+    color: black;
+    /* position: space-between;
+    display: inline-block; */
+
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+
+}
+
+.person-emphasis {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow';
+}
+
+.content-area .header-area {
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow';
+    font-family: inherit;
 }
 
 @keyframes fadeIn {
@@ -38,93 +137,316 @@
     100% {opacity:1;}
 }
 
-.panel-2 {
-    background-color: #233442;
-    padding: 3rem;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.panel-2 .container {
-    width: 100%;
-}
-
-.panel-2 p {
-    font-size: 22px;
-}
 
 #subtitle {
     opacity: 0.5;
     font-weight: bold;
 }
 
-/* 1. Enable smooth scrolling */
-html {
-	scroll-behavior: smooth;
+#highlight {
+    background-color: #FFFFFF;
 }
 
-/* 2. Make nav sticky */
-main > nav {
-	position: sticky;
-	top: 2rem;
-	align-self: start;
+#team_category {
+    font-size: 35px;
+    color: #84CEC3;
+    font-weight: bold;
 }
 
-/* 3. ScrollSpy active styles (see JS tab for activation) */
-.section-nav li.active > a {
-	color: #333;
-	font-weight: 500;
+hr.solid {
+    border-top: 10px solid rgb(249, 156, 28);
+    width: 90%;
+    margin: auto;
+    background-image: linear-gradient(#233442, #84CEC3, #F9DB87, #F99C1C);   /* doesn't work */
+    margin-bottom: -20px;
 }
 
-/* Sidebar Navigation */
-.section-nav {
-	padding-left: 0;
-	border-left: 1px solid #efefef;
+/* hexagon profiles */
+
+#hexGrid {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.866% 0;
+    font-size: 15px;
 }
 
-.section-nav a {
-	text-decoration: none;
-	display: block;
-	padding: .125rem 0;
-	color: #ccc;
-	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+#hexGrid:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-.section-nav a:hover,
-.section-nav a:focus {
-	color: #666;
+.hex {
+    position: relative;
+    list-style-type: none;
+    float: left;
+    overflow: hidden;
+    visibility: hidden;
+    outline: 1px solid transparent;
+    transform: rotate(-60deg) skewY(30deg) translatez(-1px);
 }
 
-/** Poor man's reset **/
-* {
-	box-sizing: border-box;
+.hex * {
+    position: absolute;
+    visibility: visible;
+    outline: 1px solid transparent;
 }
 
-
-ul, ol {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  text-align: left;
-}
-li {
-	margin-left: 1rem;
-}
-
-h1 {
-	font-weight: 300;
+.hexIn {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;
+    transform: skewY(-30deg) rotate(60deg);
 }
 
-/** page layout **/
-main {
-	display: grid;
-	grid-template-columns: 100%;
-	max-width: 100em;
-	width: 90%;
-	margin: 0 auto;
+.hex img {
+    left: -100%;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
 }
 
-/** enlarge the sections for this demo, so that we have a long scrollable page **/
-section {
-	padding-bottom: 20rem;
+.hex h1,
+.hex p,
+.hex li {
+    margin: 0;
+    width: 102%;
+    left: -1%;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: rgba(249, 188, 82, 0.6);
+    font-weight: bold;
+    transition: transform .2s ease-out, opacity .3s ease-out;
+    color: #FFFFFF;
+}
+
+.hex h1 {
+    bottom: 50%;
+    padding-top: 50%;
+    font-size: 1.5em;
+    z-index: 1;
+    transform: translateY(-100%) translatez(-1px);
+}
+
+.hex h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 10%;
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.hex p {
+    top: 50%;
+    padding-bottom: 50%;
+    transform: translateY(100%) translatez(-1px);
+}
+
+.hexIn:hover h1, .hexIn:focus h1, .hexIn:hover p, .hexIn:focus p {
+    transform: translateY(0%) translatez(-1px);
+}
+
+@media (min-width:1201px) {
+.hex {
+    width: 32.666%;
+    padding-bottom: 37.720%;
+}
+.hex:nth-child(5n+1),
+.hex:nth-child(5n+2) {
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+.hex:nth-child(5n+3),
+.hex:nth-child(5n+4),
+.hex:nth-child(5n+5) {
+    margin-top: -8.564%;
+    margin-bottom: -8.564%;
+}
+.hex:nth-child(5n+2),
+.hex:nth-child(5n+4) {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.hex:nth-child(5n+1) {
+    margin-left: 0.5%;
+}
+.hex:nth-child(5n+3),
+.hex:nth-child(5n+6) {
+    clear: left;
+}
+}
+
+@media (max-width: 1200px) {  /* <- 1-2  hexagons per row */
+.hex {
+    width: 49.5%;
+    padding-bottom: 57.158%;
+}
+.hex:nth-child(3n+1) {
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+.hex:nth-child(3n+2),
+.hex:nth-child(3n+3) {
+    margin-top: -13.423%;
+    margin-bottom: -13.423%;
+}
+.hex:nth-child(3n+1) {
+    margin-left: 0.5%
+}
+.hex:nth-child(3n+3) {
+    margin-left: 1%;
+}
+.hex:nth-child(3n+2),
+.hex:nth-child(3n+4) {
+    clear: left;
+}
+}
+
+@media (max-width: 400px) {
+#hexGrid {
+    font-size: 13px;
+}
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+#container
+{
+    height:2000px;
+}
+
+#container DIV
+{
+    margin:50px;
+    padding:50px;
+    background-color:pink;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+#container
+{
+    height:2000px;
+}
+
+#container DIV
+{
+    margin:50px;
+    padding:50px;
+    background-color:pink;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+ .map-container {
+	 padding: 3.2rem 0.8rem;
+	 position: relative;
+	 display: inline-block;
+}
+ .map-container img {
+	 width: 100%;
+}
+ .map-container .point {
+	 cursor: pointer;
+	 position: absolute;
+	 width: 1.6rem;
+	 height: 1.6rem;
+	 background-color: #00acc1;
+	 border-radius: 50%;
+	 transition: all 0.3s ease;
+	 will-change: transform, box-shadow;
+	 transform: translate(-50%, -50%);
+	 box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
+	 animation: pulse 3s infinite;
+}
+ .map-container .point:hover {
+	 animation: none;
+	 transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+	 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+ .map-container .venezuela {
+	 top: 54%;
+	 left: 24%;
+}
+ .map-container .brasil {
+	 top: 64%;
+	 left: 28%;
+}
+ .map-container .argentina {
+	 top: 77%;
+	 left: 27%;
+}
+ .map-container .colombia {
+	 top: 55%;
+	 left: 21%;
+}
+ .map-container .panama {
+	 top: 51%;
+	 left: 18%;
+}
+ .map-container .mexico {
+	 top: 38%;
+	 left: 12%;
+}
+ .map-container .usa {
+	 top: 26%;
+	 left: 17%;
+}
+ .map-container .arabia {
+	 top: 40%;
+	 left: 53%;
+}
+ .map-container .turquia {
+	 top: 31%;
+	 left: 57%;
+}
+ .map-container .rusia {
+	 top: 16%;
+	 left: 67%;
+}
+ .map-container .china {
+	 top: 40%;
+	 left: 72%;
+}
+ .map-container .japon {
+	 top: 34%;
+	 left: 86%;
+}
+ .map-container .australia {
+	 top: 72%;
+	 left: 86%;
+}
+ @keyframes pulse {
+	 0% {
+		 box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
+	}
+	 70% {
+		 box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
+	}
+	 100% {
+		 box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+	}
+}
+
+.zoom {
+  padding: 3em;
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
