@@ -22,6 +22,11 @@ a:active {
   text-decoration: bold;
 }
 
+.navbar {
+  background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+}
+
+
 .fade-in {
     animation: fadeIn var(--fadeTime);
     -webkit-animation: fadeIn var(--fadeTime);
@@ -66,6 +71,15 @@ a:active {
   /* background-color: #f5ffff; /* Add background on hover */ */
 }
 
+
+.banner {
+    background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
 .panel-2 {
     background-color: #233442;
     padding: 3rem;
@@ -79,7 +93,11 @@ a:active {
 }
 
 .panel-2 p {
-    font-size: 22px;
+    font-size: 1.4em;
+}
+
+.intro-text{
+  font-size: 2.2em;
 }
 
 .content-area {
@@ -378,58 +396,19 @@ hr.solid {
 	 transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
 	 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
- .map-container .venezuela {
-	 top: 54%;
-	 left: 24%;
+ .map-container .berlin {
+	 top: 25%;
+	 left: 50%;
 }
  .map-container .brasil {
 	 top: 64%;
 	 left: 28%;
 }
- .map-container .argentina {
-	 top: 77%;
-	 left: 27%;
+ .map-container .vancouver {
+	 top: 30%;
+	 left: 9%;
 }
- .map-container .colombia {
-	 top: 55%;
-	 left: 21%;
-}
- .map-container .panama {
-	 top: 51%;
-	 left: 18%;
-}
- .map-container .mexico {
-	 top: 38%;
-	 left: 12%;
-}
- .map-container .usa {
-	 top: 26%;
-	 left: 17%;
-}
- .map-container .arabia {
-	 top: 40%;
-	 left: 53%;
-}
- .map-container .turquia {
-	 top: 31%;
-	 left: 57%;
-}
- .map-container .rusia {
-	 top: 16%;
-	 left: 67%;
-}
- .map-container .china {
-	 top: 40%;
-	 left: 72%;
-}
- .map-container .japon {
-	 top: 34%;
-	 left: 86%;
-}
- .map-container .australia {
-	 top: 72%;
-	 left: 86%;
-}
+
  @keyframes pulse {
 	 0% {
 		 box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
@@ -449,4 +428,64 @@ hr.solid {
 
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  & > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: white;
+  }
+  header {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
+}
+
+
+.modal-window {
+  & > div {
+    border-radius: 1rem;
+  }
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
 }
