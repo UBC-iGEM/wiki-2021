@@ -1,0 +1,177 @@
+body{
+  text-align: left !important;
+}
+.page-title {
+    font-size: calc(20px + 3.5vw);
+    font-weight: bold;
+    margin-top: -22px;
+    text-align: center;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: bold;
+}
+
+.fade-in {
+    animation: fadeIn var(--fadeTime);
+    -webkit-animation: fadeIn var(--fadeTime);
+    -moz-animation: fadeIn var(--fadeTime);
+    -o-animation: fadeIn var(--fadeTime);
+    -ms-animation: fadeIn var(--fadeTime);
+}
+
+
+.fixed-sidebar {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    height: 100px;
+    top: 30px;
+    bottom: auto;
+    min-width: 150px;
+    max-width: 280px;
+    margin-right: 20px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+
+}
+
+.fixed-sidebar .sections {
+    display: flex;
+    flex-direction: column;
+    background-color: #233442;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: white;
+    /* line-height: 0.5; */
+}
+
+.fixed-sidebar .sections :hover {
+  /* text-decoration: underline; */
+  font-weight:bold;
+  /* background-color: #f5ffff; /* Add background on hover */ */
+}
+
+.panel-2 {
+    background-color: #233442;
+    padding: 3rem;
+    color: #FFFFFF;
+    display: grid;
+
+}
+
+.panel-2 .container {
+    width: 100%;
+}
+
+.panel-2 p {
+    font-size: 22px;
+}
+
+.content-area {
+    padding: 15px;
+    background: #FFFFFF;
+    width:90%;
+    color: black;
+    /* position: space-between;
+    display: inline-block; */
+
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+
+}
+
+.person-emphasis {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow';
+}
+
+.content-area .header-area {
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow';
+    font-family: inherit;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+#subtitle {
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+#highlight {
+    background-color: #FFFFFF;
+}
+
+#team_category {
+    font-size: 35px;
+    color: #84CEC3;
+    font-weight: bold;
+}
+
+hr.solid {
+    border-top: 10px solid rgb(249, 156, 28);
+    width: 90%;
+    margin: auto;
+    background-image: linear-gradient(#233442, #84CEC3, #F9DB87, #F99C1C);   /* doesn't work */
+    margin-bottom: -20px;
+}
+
+
+/* Gray Scale */
+.gray-hover img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gray-hover:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}

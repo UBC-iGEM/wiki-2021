@@ -1,3 +1,21 @@
+:root {
+  --fadeTime: 1s;
+  --primary-bg: #233442;
+  }
+
+body {
+  font-family: 'Open Sans';
+  text-align: center;
+  background-color: var(--primary-bg);
+  color: #FFFFFF;
+  margin: 0px;
+}
+
+footer {
+  padding-top: 5px;
+  background-color: rgba(196, 196, 196, 0.12) !important;
+}
+
 h3 {
   font-weight: bold;
   font-size: large;
@@ -26,7 +44,7 @@ h3 {
 }
 
 .panel-2 .container {
-  width: 85%; 
+  width: 85%;
 }
 
 .panel-2 p {
@@ -37,7 +55,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-bg); 
+  background-color: var(--primary-bg);
   padding: 20px;
 }
 
@@ -138,6 +156,7 @@ a.button:hover {
   padding: 1rem 1rem;
   background-color: var(--primary-bg);
   color: #FFFFFF;
+  transition: var(--fadeTime);
 }
 
 .section-body i {
@@ -169,7 +188,7 @@ a.button:hover {
 
 .accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
   background-color: #F3FAFB !important;
-  color: #233442 !important;   
+  color: #233442 !important;
 }
 
 .accordion-button:not(.collapsed) {

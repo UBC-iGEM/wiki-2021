@@ -1,0 +1,230 @@
+:root {
+  --fadeTime: 1s;
+  --primary-bg: #233442;
+  }
+
+body {
+  font-family: 'Open Sans';
+  text-align: center;
+  background-color: var(--primary-bg);
+  color: #FFFFFF;
+  margin: 0px;
+}
+
+footer {
+  padding-top: 5px;
+  background-color: rgba(196, 196, 196, 0.12) !important;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: large;
+}
+
+h6 {
+  color: #84CEC3;
+  font-size: medium;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #A0D9D1;
+}
+
+.panel-1 {
+  text-align: left;
+  height: 100vh;
+  height: 100vh;
+  padding-top: 10%;
+}
+
+.problem-overview {
+  background-image: linear-gradient(#FFFFFF, #84CEC3);
+}
+
+.problem-overview img {
+  border-bottom: #84CEC3 solid 10px;
+}
+
+.panel-2 {
+  background-color: #FFFFFF;
+  padding: 3rem;
+  text-align: center;
+  color: black;
+}
+
+.panel-2 .container {
+  width: 85%;
+}
+
+.panel-2 p {
+  font-size: 22px;
+}
+
+.splash-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-bg);
+  padding: 20px;
+}
+
+.img-fluid {
+  margin-right: 90px;
+  max-width: 100%;
+  height: 45%;
+  width: 25%;
+  display: block;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #F9DB87;
+  margin: 30px;
+  margin-right: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #F9DB87;
+  text-align:center;
+}
+
+a.button:hover {
+  box-shadow: 0px 30px 34px 0px rgb(34, 33, 33);
+  background-color: #F9DB87;
+  color:var(--primary-bg);
+}
+
+/* canvas fade in */
+
+.fade-in {
+  animation: fadeIn var(--fadeTime);
+  -webkit-animation: fadeIn var(--fadeTime);
+  -moz-animation: fadeIn var(--fadeTime);
+  -o-animation: fadeIn var(--fadeTime);
+  -ms-animation: fadeIn var(--fadeTime);
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+#section_preview {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #FFFFFF;
+  color: black;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--primary-bg);
+  background-clip: border-box;
+  border-top: solid 20px #FFFFFF;
+}
+
+.section-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background-color: var(--primary-bg);
+  color: #FFFFFF;
+  transition: var(--fadeTime);
+}
+
+.section-body i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.section a {
+  text-decoration: none;
+}
+
+.section-body:hover {
+  display: block;
+  background-color: #84CEC3;
+}
+
+.visualization {
+  text-align: center;
+}
+
+#citation {
+  font-size: 18px;
+}
+
+/* Pretend this doesn't exist for a sec :P*
+
+
+.stack {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.layer1 {
+    width: inherit;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.layer2 {
+    width: inherit;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.layer3 {
+    width: inherit;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+} */
+
+
+.jumbotron{
+    background: url("../images/section-banner/integrated-hp.jpg") no-repeat center center !important;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 50vh;
+}
+
+#top{
+  padding-top: 12.5%;
+  text-align: center;
+}

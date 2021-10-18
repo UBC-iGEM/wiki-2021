@@ -1,11 +1,455 @@
-<!-- https://2021.igem.org/Team:Example/Collaborations -->
+<!-- https://2021.igem.org/Team:Example/Attributions -->
+<!-- https://2021.igem.org/Judging/Medals -->
 
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+  <head>
+    <title>UBC iGEM 2021</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-    <body>
-        
-    </body>
+    <!-- Google Fonts TODO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- TODO -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/header_footer.css">
+    <link rel="stylesheet" href="../assets/css/collab.css">
+    <script src="..\assets\js\min\jquery-3.3.1.min.js"</script>
+    <!-- <script src="..\assets\js\min\bootstrap.min.js"</script>
+
+    <script src="..\assets\js\min\bootstrap.min.js.map"</script> -->
+    <script src="..\assets\js\bootstrap.js"></script>
+    <script src="assets\js\bootstrap.js.map">
+
+    </script>
+    <script src="..\assets\js\collab.js"></script>
+
+    <!-- Font Awesome Icons TODO -->
+    <script src="https://kit.fontawesome.com/dee0481b32.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- dropdown, collapsible nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/images/detecTME_logo_light_no_text.svg" style="width: 30px; height: 30px;" alt="detecTME logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../project/description.html">Description</a></li>
+                <li><a class="dropdown-item" href="../project/poc.html">Design</a></li>
+                <li><a class="dropdown-item" href="../project/engineering.html">Engineering Success</a></li>
+                <li><a class="dropdown-item" href="../project/implementation.html">Implementation</a></li>
+                <li><a class="dropdown-item" href="../project/results.html">Results</a></li>
+                <li><a class="dropdown-item" href="../project/contribution.html">Contributions</a></li>
+                <li><a class="dropdown-item" href="../project/partnership.html">Partnerships</a></li>
+                <li><a class="dropdown-item" href="../project/future.html">Future Directions</a></li>
+                <li><a class="dropdown-item" href="../project/poster.html">Project Poster</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Experiments
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../experiments/experiments.html">Experimental Design</a></li>
+                <li><a class="dropdown-item" href="../experiments/protocols.html">Protocols</a></li>
+                <li><a class="dropdown-item" href="../experiments/notebook.html">Lab Notebook</a></li>
+                <li><a class="dropdown-item" href="../experiments/safety.html">Safety</a></li>
+                <li><a class="dropdown-item" href="../experiments/parts.html">Parts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Models
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../models/model.html">Mathematical Modelling</a></li>
+                <li><a class="dropdown-item" href="../models/software.html">Software</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 8px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                User-Centered Design
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../user-centered design/integrated_hp.html">Human Practices</a></li>
+                <li><a class="dropdown-item" href="../user-centered design/communication.html">Education & Outreach</a></li>
+                <li><a class="dropdown-item" href="../user-centered design/collaborations.html">Collaborations</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="margin-right: 85px;">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Team
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../team/team.html">Team Members</a></li>
+                <li><a class="dropdown-item" href="../team/attributions.html">Attributions</a></li>
+                <li><a class="dropdown-item" href="../team/sponsors.html">Sponsors</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TODO: group photo as panel background? other ideas? -->
+    <!-- top bar with title -->
+    <div class="fade-in">
+        <section class="panel-2">
+            <div class="container">
+                <div>
+                    <p id="subtitle">HUMAN PRACTICES</p>
+                    <h1 class="page-title">Education</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- side content bar -->
+
+    <div class="panel-2" style="background-color: #ebebeb;">
+      <div class="content-area" id="textual-content">
+        <p class="intro-text" style="font-size: 2.25em;">Scientific efforts never stand alone. Whether it be through educational outreach or partnerships, scientific communication is an integral part of any work we do as scientists, and consequently work we do in iGEM. It presents the opportunity to spark inspiration for science in others, and get the idea across to stakeholders or like-minded people in the field. In educating the public about our efforts in different scopes - STEM, biology, genetics and our specific project - we sought to widen our audience to reach different age groups, countries, and people who differ in learning ability and socioeconomic status.
+        </p>
+        <br><br>
+
+
+          <h1 id="Edu" style="text-align: center;font-size:4em; line-height:1.2em;"><b>Making Synthetic Biology Accesible Through...</b></h1>
+          <br>
+          <br>
+          <br>
+          <br>
+
+
+          <h1 id="DiffAgeGroup" style="text-align: left ; margin-left: 20px; line-height:50px"><b>1. Different Age Groups</b></h1>
+          <br><br>
+          <p>With the rise of biotechnology as an industry, it is more important than ever for scientists to inspire curiosity in STEM in younger audiences. The COVID-19 pandemic has highlighted the relevance of scientific knowledge for all public no matter the age group, encouraging young and elderly alike to be well-informed about topics in molecular biology. As such, the education of synthetic biology should be generalized to the largest range of ages possible. </p>
+          <br>
+          <div class="container p-3">
+            <div class="row">
+              <div class="col-sm p-3">
+                <div class="zoom"><img class="img-fluid" src="..\assets\images\hp\rewritten.png" />
+                </div><br>
+                <h2>Rewritten</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              </div>
+              <div class="col-sm p-3">
+                <div class="zoom"><img class="img-fluid" src="..\assets\images\hp\geeringup.png" />
+                </div><br>
+                <h2>Geering Up</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              </div>
+              <div class="col-sm p-3">
+                <div class="zoom"><img class="img-fluid" src="..\assets\images\hp\kleb.png" />
+                </div><br>
+                <h2>Adventures of Kleb</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="p-4 pb-5">
+            <div class="row">
+              <h2>Rewritten</h2>
+              <p style="text-align: left;"> The rewritten video series models scientific understanding through different ages, aiming to ameliorate science education and communication of synthetic biology. It was intended to "rewrite" the way that biology is currently presented to cater towards people that science research happens for. People from different professions, ages, and educational backgrounds were interviewed for their thoughts on how biology has had a presence in their lives and if they have ever gotten to learn about the field of synthetic biology. We asked them what a field like this could mean for their lives and future. They brought to light some of the shortcomings in the number of problems that could be addressed by creative genetic engineering solutions. They also acted as springboards for ideation in our project and provided feedback for where we envisioned our project to go down the road. We felt that we had helped educate them on how to extend beyond the confines of what they understand biology to be now and inform them about future developments within this field. [V1: panel includes screenshot of Youtube video</p>
+            </div>
+            <div class="row">
+              <h2>Geering Up</h2>
+              <p style="text-align: left;">Geering up, tailored to high school students interested in pursuing engineering studies for university, aimed to provide the key foundational knowledge surrounding synthetic biology and genetic engineering solutions. In partnership with Geering up UBC, a STEM club aimed to provide an interactive workshop for highschool and junior high students to learn more about STEM related fields, UBC iGEM created a workshop on genetic engineering. Here, we taught the students the basics of the Central Dogma, CRISPR and DNA manipulation, plasmids, and various cases of ethics in the genetic engineering field. Through these workshops, we hoped to spark enthusiasm in synthetic biology and through this, in the bioengineering field in general for these young students to pursue. [V2: panel includes screenshot of Zoom workshop] </p>
+            </div>
+
+            <div class="row">
+              <h2>Adventures of Kleb</h2>
+              <p style="text-align: left;"> We believe that learning relevant concepts in science can happen at any age, as young as pre-school if given age-appropriate resources. “The Adventures of Kleb” is a storybook written and illustrated by various members of our team in response to the COVID-19 pandemic. This book aimed at pre-school age children is meant to introduce children to the world of microorganisms that exists all around us. We have held storybook reading sessions at Fun Ville Daycare Center, and we hope to distribute the resource to teachers and parents who can use it to further explain the need for frequent hand washing and social distancing measures that are currently in place. [V3: panel includes preview from Kleb]</p>
+
+            </div>
+          </div>
+
+
+          <h1 id="InternalTeam" style="text-align: left; margin-left: 20px; line-height:50px" class="pb-5 p-4"><b>2. A Global Scale</b></h1>
+          <p>A considerable amount of iGEM’s praise comes from its ability to host teams from up to X different countries for the same purpose, uniting knowledge of synthetic biology throughout the world. As such, the UBC iGEM team sees it as a necessity to immerse ourselves in this universality through collaboration with both national and international young scientists. Communications that have involved discussion of both scientific and non-scientific topics has allowed us to understand common struggles and goals between groups of different backgrounds.</p>
+                    <br>
+                    <div class="container">
+                      <div class="map-container">
+                        <img src="..\assets\images\hp\map.png">
+                        <a href="#open-modal"><div class="point berlin tippy" title="Berlin">
+
+                       </div></a>
+                        <a href=""><div class="point brasil tippy" title="Brasil"></div></a>
+                        <a href=""><div class="point vancouver tippy" title="Vancouver"></div></a>
+                      </div>
+
+                    </div>
+
+                    <div id="open-modal" class="modal-window">
+                      <div>
+                        <a href="#" title="Close" class="modal-close">Close</a>
+                        <h1>Voilà!</h1>
+                        <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+                        <div><small>Check out</small></div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="container p-3">
+                      <div class="row">
+                        <div class="col">
+                          <img class="rounded-circle p-3 m-3" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                          <h2>Berlin Collaboration</h2>
+                          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        </div><!-- /.col -->
+                        <div class="col">
+                          <img class="rounded-circle p-3 m-3" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                          <h2>STEM Sorority</h2>
+                          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        </div><!-- /.col -->
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <img class="rounded-circle p-3 m-3" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                          <h2>Synthetic Biology Curriculum</h2>
+                          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        </div><!-- /.col -->
+                        <div class="col">
+                          <img class="rounded-circle p-3 m-3" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                          <h2>iGEM Brazil Collaboration</h2>
+                          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        </div><!-- /.col -->
+                      </div>
+                    </div>
+
+                    <div class="p-4 pb-5">
+                      <div class="row">
+                        <h2>Berlin Collaboration</h2>
+                        <p style="text-align: left;"> Our collaboration with the iGEM team of Humboldt Berlin was based on our common interests in using salmonella as a novel reporter system for cancer treatment and tumour characterization. We decided to highlight the ways in which salmonella can be used to develop clinical solutions by designing infographics to inform the public of i) the clinical implications of cancer, and ii) the potential of salmonella for possibly mitigating some of these effects. As researchers, we were able to share our project efforts with the general public through platforms like Instagram and Facebook. Through this collaborative experience, we effectively highlighted how our approaches are clinically relevant, as well as answered commonly asked questions about cancers and salmonella. [V5: panel includes screenshot of Zoom meeting]
+                      </p>
+                      </div>
+                      <div class="row">
+                        <h2>STEM Sorority</h2>
+                        <p style="text-align: left;">Apart from international efforts, it is also important to harbour this same enthusiasm for science within our local community. The STEM sorority is a Vancouver-based club aimed to empower women in STEM fields.
+                        <br><br>Here, our all-female presenters presented on the different paths to research and industry work and they have learned along the way. Gender-based prejudice existing in biotechnology related fields were discussed and how we as a society can circumvent those challenges were discussed as well. We were grateful to listen to the different perspectives of these young women in STEM: their concerns, interests, and most importantly their excitement at what has yet to be accomplished in the ever-changing field of synthetic biology and biotechnology.  [V6: panel includes screenshot of workshop]
+                        </p>
+                      </div>
+
+                      <div class="row">
+                        <h2>Synthetic Biology Curriculum</h2>
+                        <p style="text-align: left;"> Reaching all corners of the globe with our outreach endeavors is an impossible task, unless educational content is publicly available. Our video-based synthetic biology curriculum focused on dispersing information about synthetic biology as a field and its exciting applications to real-world problems.
+                        <br><br> The videos are designed to present these innovative developments to the audience in a concise and interactive way. This year, the SynBio Curriculum focuses on two major and relevant concepts: vaccine and organoid development. [V7: panel includes screenshot of Youtube video]
+                        </p>
+
+                      </div>
+
+                      <div class="row">
+                        <h2>iGEM Brazil Collaboration</h2>
+                        <p style="text-align: left;"> Our collaboration with iGEM team USP-Brazil has allowed us to diversify our outreach efforts throughout multiple continents. The UBC iGEM x USP iGEM collab included working on two educational projects that aimed to communicate and expose Brazilian children and teenagers to the beauty of science and synthetic biology, having weekly meetings from April until September. One of the projects worked on was called “Scientific Camp”, in which children in elementary school were exposed to a personalized fantastic narrative that changed depending on their preferences, and included scientific challenges throughout the story to go to the next level of the story, engaging the children in a fun way, while stimulating their investigative reasoning skills and learning science. The collaboration included the elaboration of the entire camp, including the planning of each challenge, refinement of the story and ____.
+
+                        <br><br> The other project worked on during the collaboration was “Synthetic Biology Olympiad”, in which teenagers currently enrolled in high school could participate in an exam that had an objective to encourage interest in the field of synthetic biology and employ critical thinking skills in science. The online format of this olympiad would allow for quick and equal access to the activities through a standard phone plan, and the questions of the olympiad were coordinated between our two teams. This allowed for us to contribute to the dissemination of STEM knowledge in people with differing socioeconomic conditions, where information of this kind is harder to get by.
+
+                        <br><br>
+                        [V8: panel includes photo of Zoom meeting]
+
+
+                        </p>
+
+                      </div>
+                    </div>
+
+
+
+          <br>
+            <h1 class="p-4 pb-5" id="InternalTeam" style="text-align: left; margin-left: 20px; line-height:50px"><b>3. People with Different Learning Disabilities</b></h1>
+            <p style="text-align:left;"">Despite our efforts to reach all age groups and nationalities with scientific educational material, we recognize that all individuals learn differently. Hence, we must account for these differences that would otherwise hinder the audience’s ability to receive information.</p>
+          <br><br>
+
+          <div class="container">
+            <div class="row">
+              <h2>CODE Initiative</h2>
+              <p > We believe that learning relevant concepts in science can happen at any age, as young as pre-school if given age-appropriate resources. “The Adventures of Kleb” is a storybook written and illustrated by various members of our team in response to the COVID-19 pandemic. This book aimed at pre-school age children is meant to introduce children to the world of microorganisms that exists all around us. We have held storybook reading sessions at Fun Ville Daycare Center, and we hope to distribute the resource to teachers and parents who can use it to further explain the need for frequent hand washing and social distancing measures that are currently in place. [V3: panel includes preview from Kleb]</p>
+
+            </div>
+          </div>
+            <h1 class="p-4 pb-5" id="InternalTeam" style="text-align: left; margin-left: 20px; line-height:50px"><b>4. Educational Material in Differing Mediums</b></h1>
+          <br>
+          <p>Even if we tailor our outreach materials to the widest possible range of audiences, every person has a personal preference of how they prefer to receive educational content. Through having a large range of mediums to hand out our material, it becomes more accessible to the audiences we want to reach. For this reason, we made sure our work spanned written content, video or visual content, and interpersonal content such as workshops or project-based meeting discussions. Each initiative is consequently labelled as one of the three:
+</p>
+          <div class="row p-3 m-2">
+            <div class="col-2">
+                  <img class="rounded-circle p-2" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            </div>
+            <div class="col-10" style="font-size:1.5em">  <p>Written content including preparation of workshop questions and illustrated books.
+</p></div>
+          </div>
+          <div class="row p-3 m-2">
+            <div class="col-2">
+                  <img class="rounded-circle p-2" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            </div>
+            <div class="col-10 " style="font-size:1.5em">  <p>Audiovisual content including video production or creation of educational infographics.</p></div>
+          </div>
+          <div class="row p-3 m-2">
+            <div class="col-2 " style="font-size:1.5em">
+                  <img class="rounded-circle p-2" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            </div>
+            <div class="col-10 " style="font-size:1.5em">  <p>Content that involves interpersonal interaction, such as holding workshops, an informational panel, or discussing wet and dry lab approaches of our projects.
+</p></div>
+          </div>
+
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+    	</div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+      <section>
+        <div class="container mt-1">
+          <div class="row mt-3 text-white" style="text-align: left;">
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 mx-auto mb-3" style="padding: 0px;">
+              <a href="https://www.ubcigem.com/" target="_blank">
+                <img src="../assets/images/UBC_iGEM_logo.png" style="width: 110px; height: 175px;">
+              </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Project
+              </h6>
+              <p>
+                <a href="../project/description.html" class="text-reset">Description</a>
+              </p>
+              <p>
+                <a href="../project/poc.html" class="text-reset">Design</a>
+              </p>
+              <p>
+                <a href="../project/engineering.html" class="text-reset">Engineering</a>
+              </p>
+              <p>
+                <a href="../project/implementation.html" class="text-reset">Implementation</a>
+              </p>
+              <p>
+                <a href="../project/results.html" class="text-reset">Results</a>
+              </p>
+              <p>
+                <a href="../project/contribution.html" class="text-reset">Contributions</a>
+              </p>
+              <p>
+                <a href="../project/partnership.html" class="text-reset">Partnerships</a>
+              </p>
+              <p>
+                <a href="../project/future.html" class="text-reset">Future Directions</a>
+              </p>
+              <p>
+                <a href="../project/poster.html" class="text-reset">Poster</a>
+              </p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Experiments
+              </h6>
+              <p>
+                <a href="../experiments/experiments.html" class="text-reset">Experiments</a>
+              </p>
+              <p>
+                <a href="../experiments/protocols.html" class="text-reset">Protocols</a>
+              </p>
+              <p>
+                <a href="../experiments/notebook.html" class="text-reset">Lab Notebook</a>
+              </p>
+              <p>
+                <a href="../experiments/safety.html" class="text-reset">Safety</a>
+              </p>
+              <p>
+                <a href="../experiments/parts.html" class="text-reset">Parts</a>
+              </p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Models
+              </h6>
+              <p>
+                <a href="../models/model.html" class="text-reset">Modelling</a>
+              </p>
+              <p>
+                <a href="../models/software.html" class="text-reset">Software</a>
+              </p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-3">
+                User-Centered Design
+              </h6>
+              <p>
+                <a href="../user-centered design/integrated_hp.html" class="text-reset">Human Practices</a>
+              </p>
+              <p>
+                <a href="../user-centered design/communication.html" class="text-reset">Education</a>
+              </p>
+              <p>
+                <a href="../user-centered design/communication.html" class="text-reset">Outreach</a>
+              </p>
+              <p>
+                <a href="../user-centered design/collaborations.html" class="text-reset">Collaborations</a>
+              </p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 mx-auto mb-3">
+              <h6 class="text-uppercase fw-bold mb-3">
+                Team
+              </h6>
+              <p>
+                <a href="../team/team.html" class="text-reset">Members</a>
+              </p>
+              <p>
+                <a href="../team/attributions.html" class="text-reset">Attributions</a>
+              </p>
+              <p>
+                <a href="../team/sponsors.html" class="text-reset">Sponsors</a>
+              </p>
+            </div>
+
+            <a href="#" style="text-decoration: none;">
+              <i class="fas fa-arrow-circle-up" style="color: #ffffff; font-size: 3rem; display: block; text-align: right;"></i>
+            </a>
+          </div>
+
+          <!-- social media icons -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.ubcigem.com/" role="button" target="_blank"><i class="fas fa-globe"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ubcigem/" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ubcigem?lang=en" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ubcigem" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://ca.linkedin.com/company/ubcigem" role="button" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/UBC-iGEM" role="button" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCOOzFgcv-rrXYFRonGpRhFg" role="button" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:ubcigem@gmail.com" role="button" target="_blank"><i class="far fa-envelope"></i></a>
+          <br><br>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
